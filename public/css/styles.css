@@ -1,0 +1,12 @@
+.register-icon-one li a .fab {
+    background-color: #fff;
+    color: #19184d;
+    border: 1px solid transparent; /* optional border */
+    transition: all 0.3s ease; /* smooth hover effect */
+}
+
+.register-icon-one li a:hover .fab {
+    background-color: rgb(245, 160, 28);
+    color: rgb(255, 255, 255);
+    border-color: rgb(245, 160, 28);
+}
