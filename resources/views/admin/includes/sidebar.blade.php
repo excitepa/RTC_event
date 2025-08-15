@@ -66,6 +66,15 @@
             </li>
 
             <li class="menu-item @if(in_array(Route::currentRouteName(), [])) menu-item-active @endif" aria-haspopup="true">
+                <a href="{{ route('admin.resources.lead') }}" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span class="menu-text">Resources</span>
+                </a>
+            </li>
+
+            <li class="menu-item @if(in_array(Route::currentRouteName(), [])) menu-item-active @endif" aria-haspopup="true">
                 <a href="{{ route('vip') }}" class="menu-link">
                     <span class="svg-icon menu-icon">
                         <i class="fa-solid fa-user"></i>

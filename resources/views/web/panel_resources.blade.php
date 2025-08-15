@@ -42,7 +42,7 @@
                         <div class="lower-content">
                             
                             <h4><a href="#">Economic Factors Impacting Consumer Markets. <br> Day 1 - Panel Session 1</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="images/resource/macro.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -58,93 +58,127 @@
         <div class="container">
             <div class="row text-center">
                 <div id="modal-switch" tabindex="-1" role="dialog" aria-labelledby="modal-switch-label" class="modal fade">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title centered">One last step</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header text-white" style="background: linear-gradient(135deg, #19184d, #2c2b73);">
+                                <div class="d-flex align-items-center">
+                                    <img src="{{ asset('images/logoorange.png') }}" alt="RTM Logo" style="height: 40px; margin-right: 10px;">
+                                    <h5 class="modal-title fw-bold">One Last Step to Unlock Your Resource</h5>
+                                </div>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                {{-- <p>Modal body text goes here.</p> --}}
-                                <form action="{{ route('resources.lead') }}" method="POST" id="leadForm" enctype="multipart/form-data">
-                                    @csrf
 
-                                    <input type="hidden" name="resource_type" id="resource_type">
-                                    <input type="hidden" name="video_url" id="video_url">
-                                    <input type="hidden" name="session_type" id="session_type">
+                            <!-- Modal Body -->
+                            <div class="modal-body row g-0">
 
-                                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                                    {{-- <input type="hidden" name="presentation_url" id="presentation-url"> --}}
-                                    <div class="mb-3">
-                                        {{-- <label for="exampleFormControlInput1" class="form-label">Email address</label> --}}
-                                        <input type="text" name="full_name" class="form-control" id="exampleFormControlInput1" placeholder="Fullname">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" name="company" class="form-control" id="exampleFormControlInput1" placeholder="Company/Organization">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Company Email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" name="role" class="form-control" id="exampleFormControlInput1" placeholder="Role">
-                                    </div>
-                                        <br/> 
-                                        <button class="btn btn-dark btn-medium uppercase" id="recaptcha-button-lead" type="submit">
-                                        <i class="fa fa-paper-plane"></i> Submit
+                                <!-- Left Side: Visual & Highlights -->
+                                <div class="col-md-5 bg-light p-4 text-start d-flex flex-column justify-content-center">
+                                    <img src="{{ asset('assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
+                                    <h6 class="fw-bold">What You'll Get:</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>📄 <strong>Full conference presentation</strong></li>
+                                        <li>🎥 <strong>On-demand session videos</strong></li>
+                                        <li>💡 <strong>Key insights & takeaways</strong></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Right Side: Form -->
+                                <div class="col-md-7 p-4">
+                                    <p class="text-muted mb-4">Fill in your details and we’ll send your <strong>exclusive RTM Conference 2025 resource</strong> straight to your inbox. We respect your privacy — no spam.</p>
+
+                                    <form action="{{ route('resources.lead') }}" method="POST" id="leadForm" enctype="multipart/form-data">
+                                        @csrf
+                                        <input type="hidden" name="resource_type" id="resource_type">
+                                        <input type="hidden" name="video_url" id="video_url">
+                                        <input type="hidden" name="session_type" id="session_type">
+                                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+                                        <div class="mb-3">
+                                            <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" name="company" class="form-control" placeholder="Company/Organization" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" name="email" class="form-control" placeholder="Company Email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" name="role" class="form-control" placeholder="Role" required>
+                                        </div>
+
+                                        <button class="btn btn-dark w-100 fw-bold py-2" id="recaptcha-button-lead" type="submit">
+                                            <i class="fa fa-paper-plane me-2"></i> Send Me the Resource
                                         </button>
-                                </form>
+                                    </form>
 
-                                @push('scripts')
-                                @endpush
-                                <script>
-                                    document.getElementById("recaptcha-button-lead").addEventListener("click", function(e) {
-                                        e.preventDefault();
-                    
-                                        const form = document.getElementById("leadForm");
-                    
-                                        if (form.checkValidity()) {
-                                            grecaptcha.ready(function() {
-                                                grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', {action: 'submit'}).then(function(token) {
-                                                    document.getElementById("g-recaptcha-response").value = token;
-                                                    form.submit();
+                                    <script>
+                                        document.getElementById("recaptcha-button-lead").addEventListener("click", function(e) {
+                                            e.preventDefault();
+                                            const form = document.getElementById("leadForm");
+
+                                            if (form.checkValidity()) {
+                                                grecaptcha.ready(function() {
+                                                    grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', {action: 'submit'}).then(function(token) {
+                                                        document.getElementById("g-recaptcha-response").value = token;
+                                                        form.submit();
+                                                    });
                                                 });
+                                            } else {
+                                                form.reportValidity();
+                                            }
+                                        });
+
+                                        document.querySelectorAll('.download-btn').forEach(button => {
+                                            button.addEventListener('click', function () {
+                                                const type = this.getAttribute('data-type');
+                                                const videoUrl = this.getAttribute('data-video-url') || "";
+                                                const sessionType = this.getAttribute('data-session') || "";
+
+                                                document.getElementById('resource_type').value = type;
+                                                document.getElementById('video_url').value = videoUrl;
+                                                document.getElementById('session_type').value = sessionType;
+
+                                                // Optional: update modal title dynamically
+                                                document.querySelector('#modal-switch .modal-title').innerText = `🚀 Get Your ${type} Resource`;
                                             });
-                                        } else {
-                                            form.reportValidity(); // Show validation messages
-                                        }
-                                    });
-                                </script> 
-
-                                <script>
-                                    document.querySelectorAll('.download-btn').forEach(button => {
-                                        button.addEventListener('click', function () {
-                                            const type = this.getAttribute('data-type');
-                                            const videoUrl = this.getAttribute('data-video-url') || "";
-                                            const sessionType = this.getAttribute('data-session') || "";
-
-                                            document.getElementById('resource_type').value = type;
-                                            document.getElementById('video_url').value = videoUrl;
-                                            document.getElementById('session_type').value = sessionType;
                                         });
-                                    });
-                                </script>
 
-                                {{-- <script>
-                                    // When any download button is clicked
-                                    document.querySelectorAll('.download-btn').forEach(button => {
-                                        button.addEventListener('click', function () {
-                                            const url = this.getAttribute('data-presentation-url');
-                                            document.getElementById('presentation-url').value = url;
+                                        document.querySelectorAll('.download-btn').forEach(button => {
+                                            button.addEventListener('click', function () {
+                                                const type = this.getAttribute('data-type');
+                                                const videoUrl = this.getAttribute('data-video-url') || "";
+                                                const sessionType = this.getAttribute('data-session') || "";
+                                                const imageSrc = this.getAttribute('data-image') || "{{ asset('assets/media/images/resource-preview.png') }}";
+
+                                                document.getElementById('resource_type').value = type;
+                                                document.getElementById('video_url').value = videoUrl;
+                                                document.getElementById('session_type').value = sessionType;
+
+                                                // Change modal title
+                                                document.querySelector('#modal-switch .modal-title').innerText = `🚀 Get Your ${type} Resource`;
+
+                                                // Change preview image
+                                                const previewImg = document.querySelector('#modal-switch .modal-body img');
+                                                if (previewImg) {
+                                                    previewImg.src = imageSrc;
+                                                }
+                                            });
                                         });
-                                    });
-                                </script> --}}
+                                    </script>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>                  
-                
             </div>
         </div>
     </section>
+
+<!-- Scripts -->
+
+
 
 @endsection

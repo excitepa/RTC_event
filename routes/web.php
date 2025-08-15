@@ -55,14 +55,14 @@ Route::get('/privacypolicy', [HomeController::class, 'privacy'])->name('privacy'
 Route::get('/login', [AdminAuthController::class, 'login'])->name('login');
 Route::post('/admin-login', [AdminAuthController::class, 'admin_login'])->name('admin.login');
 
-// Route::group(['middleware' => 'auth'], function()
-// {
+Route::group(['middleware' => 'auth'], function()
+{
     Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
 
     Route::get('attendees', [DashboardController::class, 'attendee'])->name('attendee');
     Route::get('export/attendees', [DashboardController::class, 'export_attendee'])->name('export.attendee');
 
-    Route::get('resource-lead', [DashboardController::class, 'resource_lead'])->name('resources.lead');
+    Route::get('resource-lead', [DashboardController::class, 'resource_lead'])->name('admin.resources.lead');
     Route::get('export/resource-lead', [DashboardController::class, 'export_resource_lead'])->name('export.resources.lead');
 
     Route::get('/generate-codes', [DashboardController::class, 'generateAndDownload'])->name('generate.codes');
@@ -95,7 +95,7 @@ Route::post('/admin-login', [AdminAuthController::class, 'admin_login'])->name('
 
 
 
-// });
+});
 
 
 

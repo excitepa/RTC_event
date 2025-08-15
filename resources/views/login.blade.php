@@ -42,7 +42,7 @@
 						<!--begin::Signin-->
 						<div class="login-form">
 							<!--begin::Form-->
-							<form class="form" id="kt_login_singin_form" action="{{ route('admin.login') }}" method="POST">
+							<form class="" id="" action="{{ route('admin.login') }}" method="POST">
                                 @csrf
 								<!--begin::Title-->
 								<div class="pb-5 pb-lg-15">

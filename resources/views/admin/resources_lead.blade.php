@@ -52,7 +52,7 @@
                             <div class="card-toolbar">
                                 <!--begin::Dropdown-->
                                 <a href="{{ route('export.resources.lead') }}" class="btn btn-warning font-weight-bolder font-size-sm mr-3">
-                                    <i class="ki-duotone ki-add-folder"></i> Export Attendees
+                                    <i class="ki-duotone ki-add-folder"></i> Export Resources
                                 </a>
 
                             </div>

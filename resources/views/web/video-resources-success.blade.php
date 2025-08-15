@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <title>{{ env('APP_NAME') }} - Resources</title>
 <!-- Stylesheets -->
-<link href="/public/css/bootstrap.css" rel="stylesheet">
-<link href="/public/css/style.css" rel="stylesheet">
-<link href="/public/css/responsive.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
 <!--Color Switcher Mockup-->
-<link href="/public/css/color-switcher-design.css" rel="stylesheet">
+<link href="css/color-switcher-design.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="/public/images/logo1.png" type="image/x-icon">
-<link rel="icon" href="/public/images/logo1.png" type="image/x-icon">
+<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+<link rel="icon" href="images/logo1.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -256,18 +256,18 @@
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
-<script src="/public/js/jquery.js"></script>
-<script src="/public/js/popper.min.js"></script>
-<script src="/public/js/bootstrap.min.js"></script>
-<script src="/public/js/jquery-ui.js"></script>
-<script src="/public/js/jquery.fancybox.js"></script>
-<script src="/public/js/appear.js"></script>
-<script src="/public/js/owl.js"></script>
-<script src="/public/js/wow.js"></script>
-<script src="/public/js/validate.js"></script>
-<script src="/public/js/script.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/script.js"></script>
 <!-- Color Setting -->
-<script src="/public/js/color-settings.js"></script>
+<script src="js/color-settings.js"></script>
 
 <script>
     document.querySelectorAll('.alert').forEach(alert => {

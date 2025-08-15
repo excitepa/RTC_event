@@ -65,6 +65,7 @@ class FormsController extends Controller
 
     public function inquiry(Request $request)
     {
+        // dd($request);
         try {
             try {
 
@@ -335,29 +336,6 @@ class FormsController extends Controller
                 return redirect()->route('resources.success')->with('success', "Presentation links sent to your email.");
             
             } elseif ($request->resource_type === 'video') {
-                // session([
-                //     'resource_access_granted' => true,
-                //     'allowed_session_type' => $request->session_type,
-                // ]);
-
-                // switch ($request->session_type) {
-                //     case 'keynote':
-                //         $videoLink = route('watch.keynote');
-                //         $viewName = 'emails.keynote_video';
-                //         break;
-                //     case 'panel1':
-                //         $videoLink = route('watch.panel1');
-                //         $viewName = 'emails.panel1_video';
-                //         break;
-                //     case 'panel2':
-                //         $videoLink = route('watch.panel2');
-                //         $viewName = 'emails.panel2_video';
-                //         break;
-                //     default:
-                //         $videoLink = $request->video_url; // fallback
-                //         $viewName = 'emails.generic_video';
-                //         break;
-                // }
 
                 try {
                     Mail::to($resource_lead->email)->send(
@@ -369,17 +347,6 @@ class FormsController extends Controller
 
                 return redirect()->route('video.resources.success')
                                 ->with('success', "A link to the session has been sent to your email.");
-                // Use session_type to determine route
-                // switch ($request->session_type) {
-                //     case 'keynote':
-                //         return redirect()->route('watch.keynote'); // Define this route
-                //     case 'panel1':
-                //         return redirect()->route('watch.panel1');
-                //     case 'panel2':
-                //         return redirect()->route('watch.panel2');
-                //     default:
-                //         return redirect($request->video_url); // Fallback to raw URL
-                // }
             }
 
             return back()->with('danger', 'Invalid request type.')->withInput();

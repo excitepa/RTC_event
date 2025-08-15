@@ -213,8 +213,10 @@
                 <!--Register Form-->
                 <div class="register-form col-lg-8 col-md-6 col-sm-12">
                     <div class="form-inner">
-                        <form method="POST" action="{{ route('inquiry') }}" enctype="multipart/form-data">
+                        <form method="POST" id="registertestForm" action="{{ route('inquiry') }}" enctype="multipart/form-data">
                             @csrf
+
+                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                             <div class="form-group">
                                 <span class="icon fa fa-user"></span>
                                 <input type="text" name="full_name" placeholder="Full name" required="">
@@ -246,9 +248,32 @@
                             </div>
 
                             <div class="form-group text-right">
-                                <button type="submit" class="theme-btn btn-style-four"><span class="btn-title">Submit</span></button>
+                                <button type="submit" id="recaptcha-button" class="theme-btn btn-style-four">
+                                    <span class="btn-title">Submit</span></button>
                             </div>
                         </form>
+
+                        @push('scripts')
+                        @endpush
+                        <script>
+                            document.getElementById("recaptcha-button").addEventListener("click", function(e) {
+                                e.preventDefault();
+            
+                                const form = document.getElementById("registertestForm");
+            
+                                // Validate the form before submitting
+                                if (form.checkValidity()) {
+                                    grecaptcha.ready(function() {
+                                        grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', {action: 'submit'}).then(function(token) {
+                                            document.getElementById("g-recaptcha-response").value = token;
+                                            form.submit();
+                                        });
+                                    });
+                                } else {
+                                    form.reportValidity(); // Show validation messages
+                                }
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
