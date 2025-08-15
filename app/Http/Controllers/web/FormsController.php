@@ -66,6 +66,7 @@ class FormsController extends Controller
     public function inquiry(Request $request)
     {
         // dd($request);
+        
         try {
             try {
 
