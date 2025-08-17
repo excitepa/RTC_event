@@ -8,7 +8,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\admin\AuthController as AdminAuthController;
 
 Route::get('/mail', function () {
-    return view('emails.video_resources_lead');
+    return view('emails.video1_resources_lead');
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
@@ -32,6 +32,7 @@ Route::get('/video-success', [HomeController::class, 'video_success'])->name('vi
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 Route::get('/keynote1-resources', [HomeController::class, 'watch_keynote1'])->name('watch.keynote');
 Route::get('/panel1-resources', [HomeController::class, 'watch_panel1'])->name('watch.panel1');
+Route::get('/panel3-resources', [HomeController::class, 'watch_panel2'])->name('watch.panel2');
 // Route::get('/download/keynote/{file}', [FormsController::class, 'downloadKeynote'])->name('download.keynote');
 // Route::get('/download/day1', [FormsController::class, 'downloadDay1'])->name('download.day1');
 // Route::get('/download/day2', [FormsController::class, 'downloadDay2'])->name('download.day2');

@@ -116,6 +116,11 @@ class HomeController extends Controller
         return view('web.watch_panel1');
     }
 
+    public function watch_panel2()
+    {
+        return view('web.watch_panel2');
+    }
+
     public function video_success()
     {
         return view('web.video-resources-success');

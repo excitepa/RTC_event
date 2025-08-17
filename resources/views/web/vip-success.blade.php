@@ -175,7 +175,7 @@
                     <li><a href="{{ route('speakers') }}">Speakers</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
                 </ul>
-                <div class="copyright-text">© Copyright 2024 All Rights Reserved by <a href="index.html">Expert-Themes</a></div>
+                <div class="copyright-text">© Copyright 2025 All Rights Reserved by <a href="index.html">Expert-Themes</a></div>
                 <ul class="social-icon-one">
                     <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>

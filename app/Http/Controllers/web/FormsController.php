@@ -305,6 +305,7 @@ class FormsController extends Controller
 
     public function resources_lead(Request $request)
     {
+        // dd($request);
         try {
             $request->validate([
                 'full_name' => 'bail|required|string',
@@ -312,7 +313,7 @@ class FormsController extends Controller
                 'company' => 'bail|required|string',
                 'role' => 'bail|required|string',
                 'g-recaptcha-response' => ['required', new EventRegister],
-                'resource_type' => 'required|in:download,video',
+                'resource_type' => 'required|in:download,video,video1',
                 'session_type' => 'nullable|string',
                 'video_url' => 'nullable|url',
             ]);
@@ -340,7 +341,7 @@ class FormsController extends Controller
 
                 try {
                     Mail::to($resource_lead->email)->send(
-                        new VideoResourceLead($resource_lead)
+                        new VideoResourceLead($resource_lead, 'emails.video_resources_lead')
                     );
                 } catch (\Exception $e) {
                     Log::error("Email sending failed: " . $e->getMessage());
@@ -354,7 +355,7 @@ class FormsController extends Controller
 
                 try {
                     Mail::to($resource_lead->email)->send(
-                        new VideoResourceLead($resource_lead)
+                        new VideoResourceLead($resource_lead, 'emails.video1_resources_lead')
                     );
                 } catch (\Exception $e) {
                     Log::error("Email sending failed: " . $e->getMessage());

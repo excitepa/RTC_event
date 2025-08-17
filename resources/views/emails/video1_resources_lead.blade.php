@@ -63,45 +63,45 @@
 </head>
 <body>
     <div class="container">
-        <img src="{{ asset('images/resource/macro.png') }}" alt="Webinar Banner" class="banner">
+        <img src="{{ asset('images/resource/consumer-centric.png') }}" alt="Webinar Banner" class="banner">
         <div class="header">
-            📊 Your RTM  Day 1, Panel 1 Video is Ready to Watch!
+            📊 Your RTM Day 1, Panel 3 Video is Ready to Watch!
         </div>
         <div class="content">
             {{-- <p>Hi {{ $lead->full_name }},</p> --}}
             <p>Thank you for your interest in the <strong>Route to Market West Africa Summit</strong>.</p>
-            <p>We are excited to share with you the recording of <strong>Panel Session 1 – Economic Factors Impacting Consumer Markets</strong>, an insightful discussion that explores how macroeconomic trends are shaping consumer behavior and market demand in today’s dynamic economies.</p>
+            <p>We are excited to share with you the recording of <strong>Panel Session 3 – Consumer-Centric Marketing Strategies</strong>, examine current consumer behaviors, preferences, and trends that influence purchasing decisions in the region.</p>
 
             <p><strong>Session Details:</strong></p>
             <ul>
-                <li>📍 <strong>Session Title:</strong> Economic Factors Impacting Consumer Markets</li>
-                <li>📅 <strong>Recorded at:</strong> Route To Market Conference 2025</li>
-                <li>🎙️ <strong>Day 1, Panel Session 1</strong></li>
-                <li>🎯 <strong>Theme:</strong> Macroeconomics</li>
+                <li>📍 <strong>Session Title:</strong> Consumer-Centric Marketing Strategies</li>
+                <li>📅 <strong>Recorded at:</strong> RTM Conference 2025</li>
+                <li>🎙️ <strong>Day 1, Panel Session 3</strong></li>
+                <li>🎯 <strong>Theme:</strong> Consumer-Centric Marketing   </li>
             </ul>
 
             <p><strong>In this session, you’ll discover:</strong></p>
             <ul>
-                <li>📈 How inflation impacts purchasing power and product pricing.</li>
-                <li>💱 The role of currency fluctuations on imports, exports, and cost of goods.</li>
-                <li>📉 Economic growth patterns and their influence on disposable income and consumer confidence.</li>
-                <li>🧠 Strategic ways to adapt marketing and distribution models in volatile economies.</li>
+                <li>🧭 How evolving consumer journeys and mobile-first behaviors are reshaping channels, content, and shopping experiences.</li>
+                <li>🤝 The growing influence of social proof and personalization in building trust and driving conversions.</li>
+                <li>💸 Value-driven habits and spending preferences that impact pricing, packaging, and retention strategies.</li>
+                <li>🌍 The importance of localization, sustainability, and cultural relevance in winning consumer loyalty.</li>
             </ul>
 
             <p><strong>Panelists Include:</strong></p>
             <ul>
-                <li>Victor Ndukauba – Deputy Managing Director, Afrinvest West Africa</li>
-                <li>Ugo Obi-Chukwu – Founder/CEO, Nairametrics</li>
-                <li>Modupe Femi-Okunbanjo – Finance Controller, Unilever</li>
-                <li>Narendra Nagarkar – Chief Executive Officer, Bhojsons Group Plc</li>
+                <li>Emeka Nwodo – Category Manager, Gum & Jellies, Perfetti Van Melle</li>
+                <li>Segun Ogunleye – Head of Marketing, Diageo</li>
+                <li>Maureen Ifada – Marketing Director, FC WAMCO</li>
+                {{-- <li>Narendra Nagarkar – Chief Executive Officer, Bhojsons Group Plc</li> --}}
             </ul>
-            <p><strong>Moderated by:</strong> Olatunji Gbesan – Managing Partner, Crimson Oak Partners</p>
+            <p><strong>Moderated by:</strong> Tola Bamigbaiye-Elatuyi – Chair, Brand Advisory Board, Meristem</p>
 
             {{-- <p><strong>Please note:</strong> This video link will remain active for <strong>60 minutes</strong> from the time you received this email.</p> --}}
 
             <div class="cta">
                 <a href=
-                "{{ route('watch.panel1') }}" 
+                "{{ route('watch.panel2') }}" 
                 target="_blank">🎥 Watch Panel 3 Video</a>
             </div>
 

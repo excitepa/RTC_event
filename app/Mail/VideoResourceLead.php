@@ -18,11 +18,11 @@ class VideoResourceLead extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($resource_lead)
+    public function __construct($resource_lead, $viewName = 'emails.video_resources_lead')
     {
         //
         $this->lead = $resource_lead;
-        // $this->viewName = $viewName;
+        $this->viewName = $viewName;
         // $this->videoLink = $videoLink;
     }
 
@@ -43,7 +43,7 @@ class VideoResourceLead extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.video_resources_lead',
+            view: $this->viewName,
             with: [
                 'lead' => $this->lead,
                 'videoLink' => $this->videoLink,

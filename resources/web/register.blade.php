@@ -692,7 +692,7 @@
 
                 </ul>
 
-                <div class="copyright-text">© Copyright 2024 All Rights Reserved by <a href="index.html">Expert-Themes</a></div>
+                <div class="copyright-text">© Copyright 2025 All Rights Reserved by <a href="index.html">Expert-Themes</a></div>
 
                 <ul class="social-icon-one">
 

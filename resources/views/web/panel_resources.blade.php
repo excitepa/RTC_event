@@ -51,12 +51,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="images/resource/marketing.png" alt=""></a></figure>
+                            <figure class="image"><a href="blog-single.html"><img src="images/resource/consumer-centric.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Consumer-Centric Marketing Strategies. <br> Day 1 - Panel Session 3</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="images/resource/marketing.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel3" data-image="images/resource/consumer-centric.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
