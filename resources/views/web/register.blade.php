@@ -319,7 +319,6 @@
                             </form>
                             
                             @push('scripts')
-                            @endpush
                             <script>
                                 document.getElementById("recaptcha-button").addEventListener("click", function(e) {
                                     e.preventDefault();
@@ -338,7 +337,8 @@
                                         form.reportValidity(); // Show validation messages
                                     }
                                 });
-                            </script> 
+                            </script>
+                            @endpush
                         </div>
                     </div>
                 </div>
