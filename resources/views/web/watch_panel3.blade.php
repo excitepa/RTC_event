@@ -12,14 +12,13 @@
         </div> --}}
 
         <div class="auto-container">
-            <div class="sec-title text-center">
+            <div class="sec-title text-center" style="padding-top: 4rem;">
                 <span class="title">RTM 2025 Resources</span>
-                <h2>Day 1 Panel Session 1</h2>
+                <h2>Day 1 Panel Session 3</h2>
             </div>
 
             <div class="row">
-                <iframe width="1200" height="600" src="https://www.youtube.com/embed/IGe34pMyIio?si=Url5CSvEgYc9SveO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                {{-- <iframe width="1200" height="600" src="https://www.youtube.com/embed/0-ugFoUyKrs?si=usBc_Ke4XSEFQ1mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
+                <iframe width="1200" height="600" src="https://www.youtube.com/embed/0-ugFoUyKrs?si=usBc_Ke4XSEFQ1mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>

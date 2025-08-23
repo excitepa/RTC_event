@@ -18,7 +18,7 @@ class VideoResourceLead extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($resource_lead, $viewName = 'emails.video_resources_lead')
+    public function __construct($resource_lead, $viewName)
     {
         //
         $this->lead = $resource_lead;

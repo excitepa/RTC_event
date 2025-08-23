@@ -65,19 +65,19 @@
     <div class="container">
         <img src="{{ asset('images/resource/consumer-centric.png') }}" alt="Webinar Banner" class="banner">
         <div class="header">
-            📊 Your RTM Day 1, Panel 3 Video is Ready to Watch!
+            📊 Your RTM Day 1, Panel 2 Video is Ready to Watch!
         </div>
         <div class="content">
             {{-- <p>Hi {{ $lead->full_name }},</p> --}}
             <p>Thank you for your interest in the <strong>Route to Market West Africa Summit</strong>.</p>
-            <p>We are excited to share with you the recording of <strong>Panel Session 3 – Consumer-Centric Marketing Strategies</strong>, examine current consumer behaviors, preferences, and trends that influence purchasing decisions in the region.</p>
+            <p>We are excited to share with you the recording of <strong>Panel Session 2 – Leveraging Technology for Market Access</strong>, discuss the role of digital tools and platforms in enhancing market access and consumer engagement, including e-commerce and mobile technology.</p>
 
             <p><strong>Session Details:</strong></p>
             <ul>
-                <li>📍 <strong>Session Title:</strong> Consumer-Centric Marketing Strategies</li>
+                <li>📍 <strong>Session Title:</strong> Leveraging Technology for Market Access</li>
                 <li>📅 <strong>Recorded at:</strong> RTM Conference 2025</li>
-                <li>🎙️ <strong>Day 1, Panel Session 3</strong></li>
-                <li>🎯 <strong>Theme:</strong> Consumer-Centric Marketing   </li>
+                <li>🎙️ <strong>Day 1, Panel Session 2</strong></li>
+                <li>🎯 <strong>Theme:</strong> Harnessing Technology </li>
             </ul>
 
             <p><strong>In this session, you’ll discover:</strong></p>
@@ -90,18 +90,18 @@
 
             <p><strong>Panelists Include:</strong></p>
             <ul>
-                <li>Emeka Nwodo – Category Manager, Gum & Jellies, Perfetti Van Melle</li>
-                <li>Segun Ogunleye – Head of Marketing, Diageo</li>
-                <li>Maureen Ifada – Marketing Director, FC WAMCO</li>
+                <li>Adesegun Orafidiya – Category Manager, Head , Information and Digital Technology at BAT</li>
+                <li>Ezekiel Olajolo – Product at Moniepoint</li>
+                <li>Godson Nkeokelonye – MD/CEO at Excite Panacea</li>
                 {{-- <li>Narendra Nagarkar – Chief Executive Officer, Bhojsons Group Plc</li> --}}
             </ul>
-            <p><strong>Moderated by:</strong> Tola Bamigbaiye-Elatuyi – Chair, Brand Advisory Board, Meristem</p>
+            <p><strong>Moderated by:</strong> Mark Wilhem – Managing Director at MarkWandCo</p>
 
             {{-- <p><strong>Please note:</strong> This video link will remain active for <strong>60 minutes</strong> from the time you received this email.</p> --}}
 
             <div class="cta">
                 <a href=
-                "{{ route('watch.panel3') }}" 
+                "{{ route('watch.panel2') }}" 
                 target="_blank">🎥 Watch Panel 3 Video</a>
             </div>
 
