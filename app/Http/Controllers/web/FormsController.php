@@ -318,12 +318,16 @@ class FormsController extends Controller
                 'video_url' => 'nullable|url',
             ]);
 
-            $resource_lead = new ResourceLead();
-            $resource_lead->full_name = $request->full_name;
-            $resource_lead->email = $request->email;
-            $resource_lead->company = $request->company;
-            $resource_lead->role = $request->role;
-            $resource_lead->save();
+            $resource_lead = ResourceLead::where('email', $request->email)->first();
+
+            if (!$resource_lead) {
+                $resource_lead = new ResourceLead();
+                $resource_lead->full_name = $request->full_name;
+                $resource_lead->email = $request->email;
+                $resource_lead->company = $request->company;
+                $resource_lead->role = $request->role;
+                $resource_lead->save();
+            }
 
             if ($request->resource_type === 'download') {
                 $day1Url = URL::temporarySignedRoute('download.day1', now()->addMinutes(3), ['email' => $request->email]);
