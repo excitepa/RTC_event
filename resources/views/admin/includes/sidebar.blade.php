@@ -66,6 +66,60 @@
             </li>
 
             <li class="menu-item @if(in_array(Route::currentRouteName(), [])) menu-item-active @endif" aria-haspopup="true">
+                <a href="{{ route('event.index') }}" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span class="menu-text">Events</span>
+                </a>
+            </li>
+
+            <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+
+                    <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                        <a href="javascript:;" class="menu-link menu-toggle">
+                            <span class="svg-icon menu-icon">
+                                <i class="fa-solid fa-list"></i>
+                            </span>
+                            <span class="menu-text">Categories</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="menu-submenu">
+                            <i class="menu-arrow"></i>
+                            <ul class="menu-subnav">
+                                <li class="menu-item" aria-haspopup="true">
+                                    <a href="{{ route('admin.category.index') }}?type=blog" class="menu-link">
+                                        <i class="menu-bullet menu-bullet-dot">
+
+                                            <span></span>
+                                        </i>
+                                        <span class="menu-text">Blog Categories</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </li>
+
+            <li class="menu-item @if(in_array(Route::currentRouteName(), ['admin.users.admins'])) menu-item-active @endif" aria-haspopup="true">
+                <a href="{{ route('blog.index') }}" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </span>
+                    <span class="menu-text">View Blogs</span>
+                </a>
+            </li>
+
+            <li class="menu-item @if(in_array(Route::currentRouteName(), ['admin.users.admins'])) menu-item-active @endif" aria-haspopup="true">
+                <a href="{{ route('gallery.index') }}" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </span>
+                    <span class="menu-text">View Galleries</span>
+                </a>
+            </li>
+
+            <li class="menu-item @if(in_array(Route::currentRouteName(), [])) menu-item-active @endif" aria-haspopup="true">
                 <a href="{{ route('admin.resources.lead') }}" class="menu-link">
                     <span class="svg-icon menu-icon">
                         <i class="fa-solid fa-user"></i>

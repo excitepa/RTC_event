@@ -130,5 +130,7 @@ class HomeController extends Controller
     {
         return view('web.video-resources-success');
     }
+
+    // public function 
 }
 

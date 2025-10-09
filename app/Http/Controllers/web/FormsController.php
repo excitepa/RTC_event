@@ -383,6 +383,20 @@ class FormsController extends Controller
                                 ->with('success', "A link to the session has been sent to your email.");
             }
 
+            elseif ($request->resource_type === 'keynote1') {
+
+                try {
+                    Mail::to($resource_lead->email)->send(
+                        new VideoResourceLead($resource_lead, 'emails.keynote1_resources_lead')
+                    );
+                } catch (\Exception $e) {
+                    Log::error("Email sending failed: " . $e->getMessage());
+                }
+
+                return redirect()->route('video.resources.success')
+                                ->with('success', "A link to the session has been sent to your email.");
+            }
+
             return back()->with('danger', 'Invalid request type.')->withInput();
         } catch (ValidationException $th) {
             return back()->with('danger', $th->validator->errors()->first())->withInput();

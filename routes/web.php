@@ -1,14 +1,20 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\web\HomeController;
-use App\Http\Controllers\web\FormsController;
-use App\Http\Controllers\admin\DashboardController;
-use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\admin\AuthController as AdminAuthController;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\admin\BlogController;
+use App\Http\Controllers\admin\CategoryController;
+use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\EventController;
+use App\Http\Controllers\admin\GalleryController;
+use App\Http\Controllers\web\FormsController;
+use App\Http\Controllers\web\HomeController;
+use Illuminate\Support\Facades\Route;
+
+
 
 Route::get('/mail', function () {
-    return view('emails.video1_resources_lead');
+    return view('emails.keynote1_resources_lead');
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
@@ -30,10 +36,11 @@ Route::post('/resources-lead', [FormsController::class, 'resources_lead'])->name
 Route::get('/success-resources', [FormsController::class, 'resources_success'])->name('resources.success');
 Route::get('/video-success', [HomeController::class, 'video_success'])->name('video.resources.success');
 Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
-Route::get('/keynote1-resources', [HomeController::class, 'watch_keynote1'])->name('watch.keynote');
+Route::get('/keynote1-resources', [HomeController::class, 'watch_keynote1'])->name('watch.keynote1');
 Route::get('/panel1-resources', [HomeController::class, 'watch_panel1'])->name('watch.panel1');
 Route::get('/panel2-resources', [HomeController::class, 'watch_panel2'])->name('watch.panel2');
 Route::get('/panel3-resources', [HomeController::class, 'watch_panel3'])->name('watch.panel3');
+// Route::get('/keynote1-resources', [HomeController::class, 'watch_keynote1'])->name('watch.keynote1');
 // Route::get('/download/keynote/{file}', [FormsController::class, 'downloadKeynote'])->name('download.keynote');
 // Route::get('/download/day1', [FormsController::class, 'downloadDay1'])->name('download.day1');
 // Route::get('/download/day2', [FormsController::class, 'downloadDay2'])->name('download.day2');
@@ -63,6 +70,42 @@ Route::group(['middleware' => 'auth'], function()
 
     Route::get('attendees', [DashboardController::class, 'attendee'])->name('attendee');
     Route::get('export/attendees', [DashboardController::class, 'export_attendee'])->name('export.attendee');
+
+    Route::get('event', [EventController::class, 'index'])->name('event.index');
+    Route::post('create-event', [EventController::class, 'create'])->name('event.create');
+    Route::put('edit-event/{event_id}', [EventController::class, 'edit'])->name('event.edit');
+
+        Route::controller(CategoryController::class)->group(function () {
+        Route::group(["prefix" => "categories"], function ()
+        {
+            Route::get('/', 'index')->name('admin.category.index');
+            Route::post('create', 'createCategory')->name('admin.category.create');
+            Route::put('edit/{category_id}', 'editCategory')->name('admin.category.edit');
+        });
+    });
+
+    Route::controller(BlogController::class)->group(function () {
+        Route::group(["prefix" => "blogs"], function ()
+        {
+            Route::get('/', 'index')->name('blog.index');
+            Route::match(['GET', 'POST'], 'create-blog', 'create')->name('blog.create');
+            Route::match(['GET', 'PATCH'], 'edit-blog/{blog_id}', 'edit')->name('blog.edit');
+        });
+    });
+
+    Route::controller(GalleryController::class)->group(function () {
+        Route::group(["prefix" => "galleries"], function ()
+        {
+            Route::get('/', 'index')->name('gallery.index');
+            Route::match(['GET', 'POST'], 'create-gallery', 'create')->name('gallery.create');
+            Route::match(['GET', 'PATCH'], 'edit-gallery/{gallery_id}', 'edit')->name('gallery.edit');
+            Route::get('remove-gallery-image/{gallery_id}/{image_id}', 'removeImage')->name('admin.gallery.remove.image');
+        });
+    });
+
+    // Route::get('blog', [BlogController::class, 'index'])->name('blog.index');
+    // Route::post('create-blog', [BlogController::class, 'create'])->name('blog.create');
+    // Route::put('edit-blog/{blog_id}', [BlogController::class, 'edit'])->name('blog.edit');
 
     Route::get('resource-lead', [DashboardController::class, 'resource_lead'])->name('admin.resources.lead');
     Route::get('export/resource-lead', [DashboardController::class, 'export_resource_lead'])->name('export.resources.lead');

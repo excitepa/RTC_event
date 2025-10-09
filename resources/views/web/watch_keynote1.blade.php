@@ -19,7 +19,7 @@
 
             <div class="row">
 
-                <iframe width="1200" height="600" src="https://www.youtube.com/embed/bNUDLb14hTw?si=UknW2qROEz_toGRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="1200" height="600" src="https://www.youtube.com/embed/xiX7szAYI0Y?si=RP7tKxiZy59SIg61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <!-- News Block Three -->
                 {{-- <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">

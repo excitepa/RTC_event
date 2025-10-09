@@ -63,6 +63,20 @@
                     </div>
                 </div>
 
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="blog-single.html"><img src="images/resource/day1keynote.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Building a Consumer-Centric Route to Market. <br> Day 1 - Keynote Speech</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="keynote1" data-video-url="https://www.youtube.com/embed/xiX7szAYI0Y?si=RP7tKxiZy59SIg61" data-session="keynote1" data-image="images/resource/day1keynote.png">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div>
+
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
             </div>
         </div>
