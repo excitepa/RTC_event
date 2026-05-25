@@ -2,8 +2,8 @@
 @section("page_title", "About")
 @section('content')
 <!--Page Title-->
-<section class="page-title" style="background-image:url(images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
-{{-- <section class="page-title" style="background-image:url(images/background/5.jpg);"> --}}
+<section class="page-title" style="background-image:url(/public/images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
+{{-- <section class="page-title" style="background-image:url(/public/images/background/5.jpg);"> --}}
     <div class="auto-container">
         <h1 style="color: #19184D">Privacy Policy</h1>
         <ul class="bread-crumb clearfix">

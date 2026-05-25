@@ -3,7 +3,7 @@
     <div class="auto-container">
         <!-- Footer Content -->
         <div class="footer-content">
-            <div class="footer-logo"><a href="{{ route('index') }}"><img src="images/logo_blue_inverse.png" alt=""></a></div>
+            <div class="footer-logo"><a href="{{ route('index') }}"><img src="/public/images/logo_blue_inverse.png" alt=""></a></div>
             <ul class="footer-nav">
                 <li><a href="{{ route('index') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About</a></li>

@@ -2,7 +2,7 @@
 @section("page_title", "Resources")
 @section('content')
 
-<section class="page-title" style="position: relative; background-image: url(images/background/min.jpg); background-size: cover; background-position: center;">
+<section class="page-title" style="position: relative; background-image: url(/public/images/background/min.jpg); background-size: cover; background-position: center;">
 
     <!-- Dark overlay using ::before -->
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>
@@ -50,12 +50,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/resource/commercial.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="/public/images/resource/commercial.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Building Effective Sales Strategies. <br> Day 2 - Panel Session3</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video6" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel6" data-image="images/resource/commercial.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video6" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel6" data-image="/public/images/resource/commercial.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -64,12 +64,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/resource/consumer-trends.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="/public/images/resource/consumer-trends.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Understanding Consumer Trends in West Africa. <br> Day 2 - Panel Session 2</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video5" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel5" data-image="images/resource/consumer-trends.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video5" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel5" data-image="/public/images/resource/consumer-trends.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -79,12 +79,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/resource/macro.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="/public/images/resource/macro.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Economic Factors Impacting Consumer Markets. <br> Day 1 - Panel Session 1</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="images/resource/macro.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="/public/images/resource/macro.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -93,12 +93,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/resource/tech.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="/public/images/resource/tech.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Leveraging Technology for Market Access <br> Day 1 - Panel Session 2</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video2" data-video-url="https://www.youtube.com/embed/RHTkoGTQ6ug?si=H9y399QyK1-Abt1_" data-session="panel2" data-image="images/resource/tech.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video2" data-video-url="https://www.youtube.com/embed/RHTkoGTQ6ug?si=H9y399QyK1-Abt1_" data-session="panel2" data-image="/public/images/resource/tech.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -107,12 +107,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/resource/consumer-centric.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="/public/images/resource/consumer-centric.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Consumer-Centric Marketing Strategies. <br> Day 1 - Panel Session 3</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video3" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel3" data-image="images/resource/consumer-centric.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video3" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel3" data-image="/public/images/resource/consumer-centric.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                             <!-- Modal Header -->
                             <div class="modal-header text-white" style="background: linear-gradient(135deg, #19184d, #2c2b73);">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ asset('images/logoorange.png') }}" alt="RTM Logo" style="height: 40px; margin-right: 10px;">
+                                    <img src="{{ asset('/public/images/logoorange.png') }}" alt="RTM Logo" style="height: 40px; margin-right: 10px;">
                                     <h5 class="modal-title fw-bold">One Last Step to Unlock Your Resource</h5>
                                 </div>
                                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -145,7 +145,7 @@
 
                                 <!-- Left Side: Visual & Highlights -->
                                 <div class="col-md-5 bg-light p-4 text-start d-flex flex-column justify-content-center">
-                                    <img src="{{ asset('assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
+                                    <img src="{{ asset('/public/assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
                                     <h6 class="fw-bold">What You'll Get:</h6>
                                     <ul class="list-unstyled mb-0">
                                         <li>📄 <strong>Full conference presentation</strong></li>

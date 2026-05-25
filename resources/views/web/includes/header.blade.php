@@ -15,9 +15,9 @@
         <div class="auto-container clearfix">
             <div class="logo-box">
             @if($year == 2025)
-                <div class="logo"><a href="{{ route('index') }}"><img src="{{asset('images/logo1.png') }}" alt="" title=""></a></div>
+                <div class="logo"><a href="{{ route('index') }}"><img src="{{asset('/public/images/logo1.png') }}" alt="" title=""></a></div>
             @else
-                <div class="logo"><a href="{{ route('index') }}"><img src="{{ asset('images/logo_blue_inverse.png') }}" alt="" title=""></a></div>
+                <div class="logo"><a href="{{ route('index') }}"><img src="{{ asset('/public/images/logo_blue_inverse.png') }}" alt="" title=""></a></div>
             @endif
             </div>
 

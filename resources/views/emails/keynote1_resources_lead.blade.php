@@ -63,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="{{ asset('images/resource/day1keynote.png') }}" alt="Webinar Banner" class="banner">
+        <img src="{{ asset('/public/images/resource/day1keynote.png') }}" alt="Webinar Banner" class="banner">
         <div class="header">
             Your RTM Day 1, Keynote Speech Video is Ready to Watch!
         </div>

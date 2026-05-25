@@ -63,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="{{ asset('images/vip-gold.jpeg') }}" alt="Webinar Banner" class="banner">
+        <img src="{{ asset('/public/images/vip-gold.jpeg') }}" alt="Webinar Banner" class="banner">
         <div class="header">
             Thank You for Confirming Your VIP Attendance!
         </div>

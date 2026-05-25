@@ -11,18 +11,18 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Custom Styles(used by this page)-->
-		<link href="{{ asset('assets/css/pages/login/login-4.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/css/pages/login/login-4.css') }}" rel="stylesheet" type="text/css" />
 		<!--end::Page Custom Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
-		<link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
-		<link href="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.css') }}" rel="stylesheet" type="text/css" />
-		<link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/plugins/custom/prismjs/prismjs.bundle.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
-		<link href="{{ asset('assets/css/themes/layout/header/base/light.css') }}" rel="stylesheet" type="text/css" />
-		<link href="{{ asset('assets/css/themes/layout/header/menu/light.css') }}" rel="stylesheet" type="text/css" />
-		<link href="{{ asset('assets/css/themes/layout/brand/dark.css') }}" rel="stylesheet" type="text/css" />
-		<link href="{{ asset('assets/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/css/themes/layout/header/base/light.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/css/themes/layout/header/menu/light.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/css/themes/layout/brand/dark.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('/public/assets/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
 		<!--end::Layout Themes-->
 		<link rel="shortcut icon" href="images/logo1.png" />
 	</head>
@@ -71,7 +71,7 @@
 									<button type="submit" id="kt_login_singin_form_submit_button" class="btn font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3" style="background-color: #f5a01c">Login</button>
 									{{-- <button type="button" class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg">
 									<span class="svg-icon svg-icon-md">
-										<!--begin::Svg Icon | path:assets/media/svg/social-icons/google.svg-->
+										<!--begin::Svg Icon | path:/public/assets/media/svg/social-icons/google.svg-->
 										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
 											<path d="M19.9895 10.1871C19.9895 9.36767 19.9214 8.76973 19.7742 8.14966H10.1992V11.848H15.8195C15.7062 12.7671 15.0943 14.1512 13.7346 15.0813L13.7155 15.2051L16.7429 17.4969L16.9527 17.5174C18.879 15.7789 19.9895 13.221 19.9895 10.1871Z" fill="#4285F4" />
 											<path d="M10.1993 19.9313C12.9527 19.9313 15.2643 19.0454 16.9527 17.5174L13.7346 15.0813C12.8734 15.6682 11.7176 16.0779 10.1993 16.0779C7.50243 16.0779 5.21352 14.3395 4.39759 11.9366L4.27799 11.9466L1.13003 14.3273L1.08887 14.4391C2.76588 17.6945 6.21061 19.9313 10.1993 19.9313Z" fill="#34A853" />
@@ -92,7 +92,7 @@
 				<!--begin::Content-->
 				<!--begin::Aside-->
 				<div class="login-aside order-1 order-lg-2 bgi-no-repeat bgi-position-x-right">
-					<div class="login-conteiner bgi-no-repeat bgi-position-x-center bgi-position-y-bottom" style="background-image: url({{ asset('assets/media/svg/illustrations/rtm.png') }});">
+					<div class="login-conteiner bgi-no-repeat bgi-position-x-center bgi-position-y-bottom" style="background-image: url({{ asset('/public/assets/media/svg/illustrations/rtm.png') }});">
 						<!--begin::Aside title-->
 						<h3 class="pt-lg-40 pl-lg-20 pb-lg-0 pl-10 py-20 m-0 d-flex justify-content-lg-start font-weight-boldest display5 display1-lg text-white">
 							{{-- Kirana --}}
@@ -112,9 +112,9 @@
 		<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#3699FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#E4E6EF", "dark": "#181C32" }, "light": { "white": "#ffffff", "primary": "#E1F0FF", "secondary": "#EBEDF3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#3F4254", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#EBEDF3", "gray-300": "#E4E6EF", "gray-400": "#D1D3E0", "gray-500": "#B5B5C3", "gray-600": "#7E8299", "gray-700": "#5E6278", "gray-800": "#3F4254", "gray-900": "#181C32" } }, "font-family": "Poppins" };</script>
 		<!--end::Global Config-->
 		<!--begin::Global Theme Bundle(used by all pages)-->
-		<script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
-		<script src="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.js') }}"></script>
-		<script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
+		<script src="{{ asset('/public/assets/plugins/global/plugins.bundle.js') }}"></script>
+		<script src="{{ asset('/public/assets/plugins/custom/prismjs/prismjs.bundle.js') }}"></script>
+		<script src="{{ asset('/public/assets/js/scripts.bundle.js') }}"></script>
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="{{ asset('assets/js/pages/custom/login/login-4.js') }}"></script>

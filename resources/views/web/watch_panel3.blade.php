@@ -2,7 +2,7 @@
 @section("page_title", "Resources")
 @section('content')
 
-<section class="page-title" style="position: relative; background-image: url(images/background/min.jpg); background-size: cover; background-position: center;">
+<section class="page-title" style="position: relative; background-image: url(/public/images/background/min.jpg); background-size: cover; background-position: center;">
 
     <!-- Dark overlay using ::before -->
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>

@@ -63,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="{{ asset('images/emailbanner.png') }}" alt="Event Banner" class="banner">
+        <img src="{{ asset('/public/images/emailbanner.png') }}" alt="Event Banner" class="banner">
         <div class="header">
             Thank You for Registering for Our Event!
         </div>

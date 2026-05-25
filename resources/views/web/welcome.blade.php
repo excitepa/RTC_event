@@ -7,7 +7,7 @@
 @if($year == 2025)
 <section>
     <div class="overlay_bg"></div>
-    <video style="width: 100%; height: 85vh; object-fit:cover; position: absolute; opacity: 0.80;" autoplay="" loop="" muted="" src="{{ asset('images/background/Video 2.mp4') }}"></video>
+    <video style="width: 100%; height: 85vh; object-fit:cover; position: absolute; opacity: 0.80;" autoplay="" loop="" muted="" src="{{ asset('/public/images/background/Video 2.mp4') }}"></video>
     {{-- <source src="{{ asset('images/background/Video 2.mp4') }}" type="video/mp4"> --}}
 </section>
 @else
@@ -29,7 +29,7 @@
         <div class="content-box box-content" style="margin-top: 4rem">
             <!--<div class="time-counter"><div class="time-countdown clearfix" data-countdown="06/19/2025"></div></div>-->
             <div class="scrollBtn">
-                <a href="#more-about" class="jj-scroll" style="float: right"> <img src='{{ asset('images/scrolldown.png') }}'
+                <a href="#more-about" class="jj-scroll" style="float: right"> <img src='{{ asset('/public/images/scrolldown.png') }}'
                         alt=""> </a>
             </div>
             <div style="display: flex; gap: 1rem; margin-top: 1rem;" class="banner-buttons">
@@ -56,8 +56,8 @@
 
             <!-- Slide Item -->
 
-            <!--<div class="slide-item" style="background-image: url(images/main-slider/banner.jpg);">-->
-                <div class="slide-item" style="background-image: url(images/main-slider/banner2.png);">
+            <!--<div class="slide-item" style="background-image: url(/public/images/main-slider/banner.jpg);">-->
+                <div class="slide-item" style="background-image: url(/public/images/main-slider/banner2.png);">
 
                 <div class="auto-container">
 
@@ -106,7 +106,7 @@
 
 <!-- Fun Fact Section -->
 @if($year == 2025)
-<section class="fun-fact-section style-two" style="background-image: url(images/background/9.jpg);">
+<section class="fun-fact-section style-two" style="background-image: url(/public/images/background/9.jpg);">
     <div class="auto-container">
         <div class="fact-counter">
             <div class="row clearfix">
@@ -200,7 +200,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                 <div class="inner-box" style="height: 24rem">
-                    <div class="icon-box"><img src="{{ asset('images/icons/engaging.png') }}" alt=""></div>
+                    <div class="icon-box"><img src="{{ asset('/public/images/icons/engaging.png') }}" alt=""></div>
                     <h4><a href="">Engaging keynote speakers and panel discussions</a></h4>
                     <div class="text">Hear from leading experts and practitioners sharing insights, case studies, and best practices.</div>
                     {{-- <div class="link-box"><a href="" class="theme-btn">Read More</a></div> --}}
@@ -210,7 +210,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                 <div class="inner-box" style="height: 24rem">
-                    <div class="icon-box"><img src="{{ asset('images/icons/panel.png') }}" alt=""></div>
+                    <div class="icon-box"><img src="{{ asset('/public/images/icons/panel.png') }}" alt=""></div>
                     <h4><a href="">Panel discussions</a></h4>
                     <div class="text">A panel of experts from different sectors (FMCGs, tech companies, distributors) to discuss relevant subjects.</div>
                     {{-- <div class="link-box"><a href="" class="theme-btn">Read More</a></div> --}}
@@ -220,7 +220,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                 <div class="inner-box" style="height: 24rem">
-                    <div class="icon-box"><img src="{{ asset('images/icons/product.png') }}" alt=""></div>
+                    <div class="icon-box"><img src="{{ asset('/public/images/icons/product.png') }}" alt=""></div>
                     <h4><a href="">Product Presentation</a></h4>
                     <div class="text">Get a firsthand look at an innovative solution 
                         that's making waves in the industry, plus the chance to learn from experts and network with other professionals.</div>
@@ -232,7 +232,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                 <div class="inner-box" style="height: 24rem">
-                    <div class="icon-box"><<img src="{{ asset('images/icons/interactive.png') }}" alt=""></div>
+                    <div class="icon-box"><<img src="{{ asset('/public/images/icons/interactive.png') }}" alt=""></div>
                     <h4><a href="">Interactive Question and Answers</a></h4>
                     <div class="text">Deep dive into specific topics & collaborate on solutions with like-minded peers. Feature industry experts to provide in-depth data and insights.</div>
                     {{-- <div class="link-box"><a href="" class="theme-btn">Read More</a></div> --}}
@@ -242,7 +242,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                 <div class="inner-box" style="height: 24rem">
-                    <div class="icon-box"><img src="{{ asset('images/icons/social.png') }}" alt=""></div>
+                    <div class="icon-box"><img src="{{ asset('/public/images/icons/social.png') }}" alt=""></div>
                     <h4><a href="">Social media engagement</a></h4>
                     <div class="text">Online interaction using an event hashtag and live-tweeting key sessions.</div>
                     {{-- <div class="link-box"><a href="" class="theme-btn">Read More</a></div> --}}
@@ -252,7 +252,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                 <div class="inner-box" style="height: 24rem">
-                    <div class="icon-box"><img src="{{ asset('images/icons/networking.png') }}" alt=""></div>
+                    <div class="icon-box"><img src="{{ asset('/public/images/icons/networking.png') }}" alt=""></div>
                     <h4><a href="">Networking Lunch and Exhibitors Showcase</a></h4>
                     <div class="text">Opportunities for attendees to connect, network, and learn about solutions from relevant vendors and service providers.</div>
                     {{-- <div class="link-box"><a href="" class="theme-btn">Read More</a></div> --}}
@@ -326,7 +326,7 @@
                 <div class="image-box">
 
                     {{-- <figure class="image wow fadeIn"> --}}
-                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('images/keynote.png') }}" alt="">
+                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('/public/images/keynote.png') }}" alt="">
                     {{-- </figure> --}}
 
                 </div>
@@ -495,7 +495,7 @@
                                     <!--<div class="date">9.00 AM - 10.00 AM</div>-->
                                     <h5 class="name">Panel Session 1 : Macro Economics.</h5>
                                     {{-- <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-1.jpg" alt=""></figure>
                                         <h5 class="name">Consumer Behaviour</h5>
                                         <span class="designation">Panel Session 1</span>
                                     </div> --}}
@@ -515,7 +515,7 @@
                                     <!--<div class="date">10.00 AM - 11.00 AM</div>-->
                                     <h5 class="name">Panel Session 2 : Technology.</h5>
                                     {{-- <div class="speaker-info"> --}}
-                                        {{-- <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure> --}}
+                                        {{-- <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure> --}}
                                         {{-- <span class="designation">Panel Session 5 : Macro Economics</span> --}}
                                     {{-- </div> --}}
                                     <h4><a href="#">Leveraging Technology for Market Access.</a></h4>
@@ -533,7 +533,7 @@
                                     <!--<div class="date">10.00 AM - 11.00 AM</div>-->
                                     <h5 class="name">Panel Session 3 : Marketing.</h5>
                                     {{-- <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Technology</h5>
                                         <span class="designation">Panel Session 2</span>
                                     </div> --}}
@@ -558,7 +558,7 @@
                                     <!--<div class="date">11.00 AM - 12.00 AM</div>-->
                                     <h5 class="name">Panel Session 4 : Analytics.</h5>
                                     {{-- <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-1.jpg" alt=""></figure>
                                         <h5 class="name">Marketing</h5>
                                         <span class="designation">Panel Session 4</span>
                                     </div> --}}
@@ -578,7 +578,7 @@
                                     <!--<div class="date">12.00 AM - 01.00 PM</div>-->
                                     <h5 class="name">Panel Session 5 : Consumer Trends.</h5>
                                     {{-- <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Analytics</h5>
                                         <span class="designation">Panel Session 3</span>
                                     </div> --}}
@@ -597,7 +597,7 @@
                                     <!--<div class="date">12.00 AM - 01.00 PM</div>-->
                                     <h5 class="name">Panel Session 6 : Commercial.</h5>
                                     {{-- <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Sales</h5>
                                         <span class="designation">Panel Session 6</span>
                                     </div> --}}
@@ -621,7 +621,7 @@
                                 <div class="inner">
                                     <div class="date">9.00 AM - 10.00 AM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-1.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -640,7 +640,7 @@
                                 <div class="inner">
                                     <div class="date">10.00 AM - 11.00 AM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -659,7 +659,7 @@
                                 <div class="inner">
                                     <div class="date">11.00 AM - 12.00 AM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-1.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -678,7 +678,7 @@
                                 <div class="inner">
                                     <div class="date">12.00 AM - 01.00 PM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -702,7 +702,7 @@
                                 <div class="inner">
                                     <div class="date">9.00 AM - 10.00 AM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-1.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -721,7 +721,7 @@
                                 <div class="inner">
                                     <div class="date">10.00 AM - 11.00 AM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -740,7 +740,7 @@
                                 <div class="inner">
                                     <div class="date">11.00 AM - 12.00 AM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-1.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -759,7 +759,7 @@
                                 <div class="inner">
                                     <div class="date">12.00 AM - 01.00 PM</div>
                                     <div class="speaker-info">
-                                        <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                        <figure class="thumb"><img src="/public/images/resource/thumb-2.jpg" alt=""></figure>
                                         <h5 class="name">Ashli Scroggy</h5>
                                         <span class="designation">Founder & CEO</span>
                                     </div>
@@ -1112,7 +1112,7 @@
                 <div class="speaker-block-three col-xl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/narendranagarkar/"><img src="images/background/nevara.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/narendranagarkar/"><img src="/public/images/background/nevara.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/narendranagarkar/">Narendra Nagarkar</a></h4>
@@ -1135,7 +1135,7 @@
                 <div class="speaker-block-three col-xl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/oghale-elueni-72203243/"><img src="images/background/Oghale.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/oghale-elueni-72203243/"><img src="/public/images/background/Oghale.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/oghale-elueni-72203243/">Oghale Elueni</a></h4>
@@ -1177,7 +1177,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/feyiolubodun/"><img src="images/background/feyi1.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/feyiolubodun/"><img src="/public/images/background/feyi1.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/feyiolubodun/">Feyi Olubodun</a></h4>
@@ -1200,7 +1200,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/tola-bamigbaiye-elatuyi/"><img src="images/background/tola1.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/tola-bamigbaiye-elatuyi/"><img src="/public/images/background/tola1.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/tola-bamigbaiye-elatuyi/">Tola Bamigbaiye-Elatuyi</a></h4>
@@ -1223,7 +1223,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/victorndukauba/"><img src="images/background/victor1.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/victorndukauba/"><img src="/public/images/background/victor1.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/victorndukauba/">Victor Ndukauba</a></h4>
@@ -1248,7 +1248,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/anthonilious-okojie-91654a13/"><img src="images/background/antholinius.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/anthonilious-okojie-91654a13/"><img src="/public/images/background/antholinius.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/anthonilious-okojie-91654a13/">Anthonilious Okojie</a></h4>
@@ -1271,7 +1271,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/nwodoemeka/"><img src="images/background/emeka1.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/nwodoemeka/"><img src="/public/images/background/emeka1.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/nwodoemeka/">Emeka Nwodo</a></h4>
@@ -1294,7 +1294,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/bukola-akinpelu-%F0%9F%8F%A0-9707162a/"><img src="images/background/bukola1.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/bukola-akinpelu-%F0%9F%8F%A0-9707162a/"><img src="/public/images/background/bukola1.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/bukola-akinpelu-%F0%9F%8F%A0-9707162a/">Bukola Akinpelu</a></h4>
@@ -1319,7 +1319,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/adesegun-orafidiya-mba-fbcs-3348049/"><img src="images/background/adesegun1.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/adesegun-orafidiya-mba-fbcs-3348049/"><img src="/public/images/background/adesegun1.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/adesegun-orafidiya-mba-fbcs-3348049/">Adesegun Orafidiya</a></h4>
@@ -1342,7 +1342,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/anselem-ikeotuonye-66212049/"><img src="images/background/anslem.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/anselem-ikeotuonye-66212049/"><img src="/public/images/background/anslem.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/anselem-ikeotuonye-66212049/">Anselem Ikeotuonye</a></h4>
@@ -1365,7 +1365,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/ayobamiaiyedogbon/"><img src="images/background/ayobami.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/ayobamiaiyedogbon/"><img src="/public/images/background/ayobami.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/ayobamiaiyedogbon/">Ayobami Aiyedogbon</a></h4>
@@ -1391,7 +1391,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/franklinozekhome/"><img src="images/background/franklin.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/franklinozekhome/"><img src="/public/images/background/franklin.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/franklinozekhome/">Franklin Ozekhome</a></h4>
@@ -1414,7 +1414,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/segun-ogunleye/"><img src="images/background/segun.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/segun-ogunleye/"><img src="/public/images/background/segun.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/segun-ogunleye/">Segun Ogunleye</a></h4>
@@ -1437,7 +1437,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/prahlad-gangadharan-12818014/"><img src="images/background/prahlad.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/prahlad-gangadharan-12818014/"><img src="/public/images/background/prahlad.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/prahlad-gangadharan-12818014/">Prahlad Gangadharan</a></h4>
@@ -1463,7 +1463,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/austyne-umeh-51aa6619/"><img src="images/background/austyne.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/austyne-umeh-51aa6619/"><img src="/public/images/background/austyne.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/austyne-umeh-51aa6619/">Austyne Umeh</a></h4>
@@ -1486,7 +1486,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/omolara-adagunodo/"><img src="images/background/omolara.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/omolara-adagunodo/"><img src="/public/images/background/omolara.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/omolara-adagunodo/">Omolara Adagunodo</a></h4>
@@ -1509,7 +1509,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/omolara-adagunodo/"><img src="images/background/modupe.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/omolara-adagunodo/"><img src="/public/images/background/modupe.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/omolara-adagunodo/">Modupe Femi-Okunbanjo</a></h4>
@@ -1535,7 +1535,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/ugodre-obi-chukwu-9a802326/"><img src="images/background/ugo.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/ugodre-obi-chukwu-9a802326/"><img src="/public/images/background/ugo.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/ugodre-obi-chukwu-9a802326/">Ugodre Obi-Chukwu</a></h4>
@@ -1558,7 +1558,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/barongasiodu/"><img src="images/background/barong.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/barongasiodu/"><img src="/public/images/background/barong.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/barongasiodu/">Barong Asiodu</a></h4>
@@ -1581,7 +1581,7 @@
                 <div class="speaker-block-three col-xl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="https://www.linkedin.com/in/ezekiel-olajolo/"><img src="images/background/ezekiel.png" alt=""></a></figure>
+                            <figure class="image"><a href="https://www.linkedin.com/in/ezekiel-olajolo/"><img src="/public/images/background/ezekiel.png" alt=""></a></figure>
                         </div>
                         <div class="info-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/ezekiel-olajolo/">Ezekiel Olajolo</a></h4>
@@ -1698,64 +1698,64 @@
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/1-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/1-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/1-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/1-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="400ms">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/2-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/2-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/2-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/2-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="800ms">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/3-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/3-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/3-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/3-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/4-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/4-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/4-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/4-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="400ms">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/5-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/5-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/5-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/5-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="800ms">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/6-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/6-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/6-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/6-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
 				<!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/7-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/7-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/7-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/7-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
 
                 <!-- Gallery Item -->
                 <div class="gallery-item col-lg-3 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="400ms">
                     <div class="image-box">
-                        <figure class="image"><img src="images/gallery/day1/8-min.jpg" alt=""></figure>
-                        <div class="overlay-box"><a href="images/gallery/day1/8-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
+                        <figure class="image"><img src="/public/images/gallery/day1/8-min.jpg" alt=""></figure>
+                        <div class="overlay-box"><a href="/public/images/gallery/day1/8-min.jpg" class="lightbox-image" data-fancybox="gallery"><span class="icon fa fa-expand-arrows-alt"></span></a></div>
                     </div>
                 </div>
             </div>
@@ -1795,7 +1795,7 @@
                 </div>
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box">
-                        <figure class="image"><img src="images/background/why-sponsor.png" alt=""></figure>
+                        <figure class="image"><img src="/public/images/background/why-sponsor.png" alt=""></figure>
                     </div>
                 </div>
             </div>
@@ -1848,7 +1848,7 @@
 
                     <div class="image-box">
 
-                        <figure class="image"><img src="images/partner.png" alt=""></figure>
+                        <figure class="image"><img src="/public/images/partner.png" alt=""></figure>
 
                     </div>
 
@@ -1879,22 +1879,22 @@
     <!--            <div class="row">-->
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="images/clients/idh.png" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="/public/images/clients/idh.png" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="images/clients/excite.png" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="/public/images/clients/excite.png" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="images/clients/tradesense.png" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="/public/images/clients/tradesense.png" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="images/clients/ennoventure.png" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="/public/images/clients/ennoventure.png" alt=""></a></figure>-->
     <!--                </div>-->
     <!--            </div>-->
     <!--        </div>-->
@@ -2083,7 +2083,7 @@
 
             <!-- Image Column -->
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                <figure class="image"><img src="images/icons/map-4.png" alt=""></figure>
+                <figure class="image"><img src="/public/images/icons/map-4.png" alt=""></figure>
             </div>
         </div>
     </div>
@@ -2138,7 +2138,7 @@
 
             <!-- Image Column -->
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                <figure class="image"><img src="images/icons/map-4.png" alt=""></figure>
+                <figure class="image"><img src="/public/images/icons/map-4.png" alt=""></figure>
             </div>
         </div>
     </div>

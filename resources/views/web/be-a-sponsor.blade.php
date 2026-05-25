@@ -2,7 +2,7 @@
 @section("page_title", "Participate")
 @section('content')
 <!--Page Title-->
-<section class="page-title" style="position: relative; background-image: url(images/background/bg2.png); background-size: cover; background-position: center;">
+<section class="page-title" style="position: relative; background-image: url(/public/images/background/bg2.png); background-size: cover; background-position: center;">
 
     <!-- Dark overlay using ::before -->
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>
@@ -46,7 +46,7 @@
 <!--            </div>-->
 <!--            <div class="image-column col-lg-6 col-md-12 col-sm-12">-->
 <!--                <div class="image-box">-->
-<!--                    <figure class="image"><img src="images/sponsor.jpg" alt=""></figure>-->
+<!--                    <figure class="image"><img src="/public/images/sponsor.jpg" alt=""></figure>-->
 <!--                </div>-->
 <!--            </div>-->
 <!--        </div>-->
@@ -79,7 +79,7 @@
             </div>
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="image-box">
-                    <figure class="image"><img src="images/sponsor.jpg" alt=""></figure>
+                    <figure class="image"><img src="/public/images/sponsor.jpg" alt=""></figure>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
             </div>
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="image-box">
-                    <figure class="image"><img src="images/participate1.jpg" alt=""></figure>
+                    <figure class="image"><img src="/public/images/participate1.jpg" alt=""></figure>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
             </div>
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="image-box">
-                    <figure class="image"><img src="images/exhibit (2).jpg" alt=""></figure>
+                    <figure class="image"><img src="/public/images/exhibit (2).jpg" alt=""></figure>
                 </div>
             </div>
         </div>
@@ -175,7 +175,7 @@
 <!--                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">-->
 <!--                    <div class="inner-box">-->
 <!--                        <div class="icon-box">-->
-<!--                            <div class="icon-outer"><img src="{{ asset('images/icons/bronze-medal.png') }}" alt=""></div>-->
+<!--                            <div class="icon-outer"><img src="{{ asset('/public/images/icons/bronze-medal.png') }}" alt=""></div>-->
 <!--                        </div>-->
 <!--                        <div class="price-box">-->
 <!--                            <div class="title"> Bronze Package</div>-->
@@ -211,7 +211,7 @@
 <!--                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">-->
 <!--                    <div class="inner-box">-->
 <!--                        <div class="icon-box">-->
-<!--                            <div class="icon-outer"><img src="{{ asset('images/icons/silver-medal.png') }}" alt=""></div>-->
+<!--                            <div class="icon-outer"><img src="{{ asset('/public/images/icons/silver-medal.png') }}" alt=""></div>-->
 <!--                        </div>-->
 <!--                        <div class="price-box">-->
 <!--                            <div class="title">Silver Package</div>-->
@@ -247,7 +247,7 @@
 <!--                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">-->
 <!--                    <div class="inner-box">-->
 <!--                        <div class="icon-box">-->
-<!--                            <div class="icon-outer"><img src="{{ asset('images/icons/gold-medal.png') }}" alt=""></div>-->
+<!--                            <div class="icon-outer"><img src="{{ asset('/public/images/icons/gold-medal.png') }}" alt=""></div>-->
 <!--                        </div>-->
 <!--                        <div class="price-box">-->
 <!--                            <div class="title">Gold Package</div>-->

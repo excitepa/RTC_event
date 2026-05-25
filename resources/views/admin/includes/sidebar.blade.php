@@ -8,7 +8,7 @@ resou@php
         <!--begin::Logo-->
         <a href="{{ route('admin.dashboard') }}" class="brand-logo">
             {{-- <h1>{{ config('app.name') }}</h1> --}}
-            <img alt="Logo" src="{{ asset('images/logoorange.png') }}" class="max-h-30px"/>
+            <img alt="Logo" src="{{ asset('/public/images/logoorange.png') }}" class="max-h-30px"/>
         </a>
         <!--end::Logo-->
         <!--begin::Toggle-->

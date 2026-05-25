@@ -63,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="{{ asset('images/resource/macro.png') }}" alt="Webinar Banner" class="banner">
+        <img src="{{ asset('/public/images/resource/macro.png') }}" alt="Webinar Banner" class="banner">
         <div class="header">
             Your RTM Panel 1 Video is Ready to Watch!
         </div>

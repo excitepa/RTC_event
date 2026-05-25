@@ -2,7 +2,7 @@
 @section("page_title", "Resources")
 @section('content')
 
-<section class="page-title" style="position: relative; background-image: url(images/background/min.jpg); background-size: cover; background-position: center;">
+<section class="page-title" style="position: relative; background-image: url(/public/images/background/min.jpg); background-size: cover; background-position: center;">
 
     <!-- Dark overlay using ::before -->
     <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>
@@ -37,12 +37,12 @@
                 <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href=""><img src="images/resource/day1.png" alt=""></a></figure>
+                            <figure class="image"><a href=""><img src="/public/images/resource/day1.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Building a Consumer-Centric Route to <br> Market - Narendra Nagarkar</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day1.pdf" data-image="images/resource/day1.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day1.pdf" data-image="/public/images/resource/day1.png">
                                 Download Presentation</a></div>
                         </div>
                     </div>
@@ -52,12 +52,12 @@
                 <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href=""><img src="images/resource/day2.png" alt=""></a></figure>
+                            <figure class="image"><a href=""><img src="/public/images/resource/day2.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Building Resilience in West Africa’s Dynamic Markets - Oghale Elueni</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day2.pdf" data-image="images/resource/day2.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day2.pdf" data-image="/public/images/resource/day2.png">
                                 Download Presentation</a></div>
                         </div>
                     </div>
@@ -66,12 +66,12 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href=""><img src="images/resource/day1keynote.png" alt=""></a></figure>
+                            <figure class="image"><a href=""><img src="/public/images/resource/day1keynote.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
                             <h4><a href="#">Building a Consumer-Centric Route to Market. <br> Day 1 - Keynote Speech</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="keynote1" data-video-url="https://www.youtube.com/embed/xiX7szAYI0Y?si=RP7tKxiZy59SIg61" data-session="keynote1" data-image="images/resource/day1keynote.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="keynote1" data-video-url="https://www.youtube.com/embed/xiX7szAYI0Y?si=RP7tKxiZy59SIg61" data-session="keynote1" data-image="/public/images/resource/day1keynote.png">
                                 Watch Full Session</a></div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                             <!-- Modal Header -->
                             <div class="modal-header text-white" style="background: linear-gradient(135deg, #19184d, #2c2b73);">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ asset('images/logoorange.png') }}" alt="RTM Logo" style="height: 40px; margin-right: 10px;">
+                                    <img src="{{ asset('/public/images/logoorange.png') }}" alt="RTM Logo" style="height: 40px; margin-right: 10px;">
                                     <h5 class="modal-title fw-bold">One Last Step to Unlock Your Resource</h5>
                                 </div>
                                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -104,7 +104,7 @@
 
                                 <!-- Left Side: Visual & Highlights -->
                                 <div class="col-md-5 bg-light p-4 text-start d-flex flex-column justify-content-center">
-                                    <img src="{{ asset('assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
+                                    <img src="{{ asset('/public/assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
                                     <h6 class="fw-bold">What You'll Get:</h6>
                                     <ul class="list-unstyled mb-0">
                                         <li>📄 <strong>Full conference presentation</strong></li>

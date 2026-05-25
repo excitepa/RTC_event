@@ -2,8 +2,8 @@
 @section("page_title", "About")
 @section('content')
 <!--Page Title-->
-<section class="page-title" style="background-image:url(images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
-{{-- <section class="page-title" style="background-image:url(images/background/5.jpg);"> --}}
+<section class="page-title" style="background-image:url(/public/images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
+{{-- <section class="page-title" style="background-image:url(/public/images/background/5.jpg);"> --}}
     <div class="auto-container">
         <h1 style="color: #19184D">About Us</h1>
         <ul class="bread-crumb clearfix">
@@ -59,7 +59,7 @@
             <!-- Image Column -->
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="image-box">
-                    <figure class="image wow fadeIn"><img src="images/resource/about.png" alt=""></figure>
+                    <figure class="image wow fadeIn"><img src="/public/images/resource/about.png" alt=""></figure>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
 <!--End About Section -->
 
 <!-- Fun Fact Section -->
-<section class="fun-fact-section style-two" style="background-image: url(images/background/9.jpg);">
+<section class="fun-fact-section style-two" style="background-image: url(/public/images/background/9.jpg);">
     <div class="auto-container">
         <div class="fact-counter">
             <div class="row clearfix">
@@ -209,8 +209,8 @@
 <!--End Features Section -->
 
 <!-- Call to action -->
-<section class="call-to-action" style="background-image: url(images/background/bg4.png); background-image: rgba(0, 0, 0, 0)">
-{{-- <section class="page-title" style="background-image:url(public/images/background/bg5.png);"> --}}
+<section class="call-to-action" style="background-image: url(/public/images/background/bg4.png); background-image: rgba(0, 0, 0, 0)">
+{{-- <section class="page-title" style="background-image:url(public//public/images/background/bg5.png);"> --}}
     <div class="auto-container">
         <div class="content-box">
             <div class="text">The Maiden Edition of
@@ -301,8 +301,8 @@
                     </div>
                     <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
                     <div class="link-box">
-                        <a href="#"><img src="images/icons/app-store.png" alt=""></a>
-                        <a href="#"><img src="images/icons/google-play.png" alt=""></a>
+                        <a href="#"><img src="/public/images/icons/app-store.png" alt=""></a>
+                        <a href="#"><img src="/public/images/icons/google-play.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -311,7 +311,7 @@
             <div class="image-column col-lg-7 col-md-12 col-sm-12">
                 <div class="inner-column">
                     <div class="image-box">
-                        <figure class="image wow fadeInRight"><img src="images/resource/app-mockup.png" alt=""></figure>
+                        <figure class="image wow fadeInRight"><img src="/public/images/resource/app-mockup.png" alt=""></figure>
                     </div>
                 </div>
             </div>

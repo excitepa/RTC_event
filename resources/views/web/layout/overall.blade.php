@@ -7,18 +7,18 @@
 <meta name="description" content="@yield('description')">
 <meta name="author" content="">
 <!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<link href="/public/css/bootstrap.css" rel="stylesheet">
+<link href="/public/css/style.css" rel="stylesheet">
+<link href="/public/css/styles.css" rel="stylesheet">
+<link href="/public/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" integrity="sha512-6S2HWzVFxruDlZxI3sXOZZ4/eJ8AcxkQH1+JjSe/ONCEqR9L4Ysq5JdT5ipqtzU7WHalNwzwBv+iE51gNHJNqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
 
 <!--Color Switcher Mockup-->
-<link href="css/color-switcher-design.css" rel="stylesheet">
+<link href="/public/css/color-switcher-design.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
-<link rel="icon" href="images/logo1.png" type="image/x-icon">
+<link rel="shortcut icon" href="/public/images/logo1.png" type="image/x-icon">
+<link rel="icon" href="/public/images/logo1.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

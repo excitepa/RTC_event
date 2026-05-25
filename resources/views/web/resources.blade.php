@@ -23,7 +23,7 @@
                 <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="images/resource/day1.png" alt=""></a></figure>
+                            <figure class="image"><a href="blog-single.html"><img src="/public/images/resource/day1.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
@@ -39,7 +39,7 @@
                 <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="images/resource/day2.png" alt=""></a></figure>
+                            <figure class="image"><a href="blog-single.html"><img src="/public/images/resource/day2.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             

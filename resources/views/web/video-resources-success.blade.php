@@ -24,7 +24,7 @@
         </div> --}}
         <div class="row justify-content-center">
             <div class="result-container pt-3">
-                <img src="{{ asset('images/check.png') }}" alt="" style="height: 200px; width: 200px;" class="img img-fluid">
+                <img src="{{ asset('/public/images/check.png') }}" alt="" style="height: 200px; width: 200px;" class="img img-fluid">
                 {{-- <img-fluid></img-fluid> --}}
             </div>
         </div>

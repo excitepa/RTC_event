@@ -2,8 +2,8 @@
 @section("page_title", "About")
 @section('content')
 <!--Page Title-->
-<section class="page-title" style="background-image:url(images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
-{{-- <section class="page-title" style="background-image:url(images/background/5.jpg);"> --}}
+<section class="page-title" style="background-image:url(/public/images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
+{{-- <section class="page-title" style="background-image:url(/public/images/background/5.jpg);"> --}}
     <div class="auto-container">
         <h1 style="color: #19184D">About Us</h1>
         <ul class="bread-crumb clearfix">
@@ -60,7 +60,7 @@
             <!-- Image Column -->
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="image-box">
-                    <figure class="image wow fadeIn"><img src="images/resource/about.png" alt=""></figure>
+                    <figure class="image wow fadeIn"><img src="/public/images/resource/about.png" alt=""></figure>
                 </div>
             </div>
         </div>
@@ -100,8 +100,8 @@
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="image-box">
                     {{-- <figure class="image wow fadeIn"> --}}
-                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('images/resource/abt.jpg') }}" alt="">
-                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('images/resource/rtm-abt.jpg') }}" alt="">
+                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('/public/images/resource/abt.jpg') }}" alt="">
+                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('/public/images/resource/rtm-abt.jpg') }}" alt="">
                     {{-- </figure> --}}
                 </div>
             </div>
@@ -112,7 +112,7 @@
 <!--End About Section -->
 
 <!-- Fun Fact Section -->
-<section class="fun-fact-section style-two" style="background-image: url(images/background/9.jpg);">
+<section class="fun-fact-section style-two" style="background-image: url(/public/images/background/9.jpg);">
     <div class="auto-container">
         <div class="fact-counter">
             <div class="row clearfix">
@@ -254,7 +254,7 @@
 
 <!-- Call to action -->
 @if($year == 2025)
-<section class="call-to-action" style="background-image: url(images/background/bg4.png); background-image: rgba(0, 0, 0, 0)">
+<section class="call-to-action" style="background-image: url(/public/images/background/bg4.png); background-image: rgba(0, 0, 0, 0)">
     <div class="auto-container">
         <div class="content-box">
             <div class="text">The Maiden Edition of
@@ -270,9 +270,9 @@
     </div>
 </section>
 @else
-<!--<section class="call-to-action" style="background-image: url(images/background/about-banner.jpg); background-image: rgba(0, 0, 0, 0)">-->
+<!--<section class="call-to-action" style="background-image: url(/public/images/background/about-banner.jpg); background-image: rgba(0, 0, 0, 0)">-->
 <section class="call-to-action" 
-    style="background-image: url('images/about-ban.png');">
+    style="background-image: url('/public/images/about-ban.png');">
     <div class="auto-container">
         <div class="content-box">
             <div class="text">The Second Edition of
