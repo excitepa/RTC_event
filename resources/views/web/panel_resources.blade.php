@@ -1,0 +1,249 @@
+@extends('web.layout.overall')
+@section("page_title", "Resources")
+@section('content')
+
+<section class="page-title" style="position: relative; background-image: url(images/background/min.jpg); background-size: cover; background-position: center;">
+
+    <!-- Dark overlay using ::before -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>
+
+    <div class="auto-container" style="position: relative; z-index: 1;">
+        <h1>RTM 2025 Resources</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li>RTM 2025 Resources</li>
+        </ul>
+    </div>
+</section>
+
+<!-- News Section -->
+    <section class="news-section">
+        {{-- <div class="anim-icons">
+            <span class="icon icon-circle-blue wow fadeIn"></span>
+            <span class="icon twist-line-1 wow zoomIn"></span>
+            <span class="icon twist-line-2 wow zoomIn"></span>
+            <span class="icon twist-line-3 wow zoomIn"></span>
+        </div> --}}
+
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <!--<span class="title">RTM 2025 Resources</span>-->
+                <h2>Panel Sessions</h2>
+            </div>
+
+            <div class="row">
+
+                {{-- <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/resource/day1keynote.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Building a Consumer-Centric Route to Market <br> Day 1 - Keynote Speech</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video" data-video-url="https://www.youtube.com/embed/tteHJUCQjUc?si=yThlfBPJ104Y9AuM" data-session="keynote1">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div> --}}
+                
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/resource/commercial.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Building Effective Sales Strategies. <br> Day 2 - Panel Session3</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video6" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel6" data-image="images/resource/commercial.png">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/resource/consumer-trends.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Understanding Consumer Trends in West Africa. <br> Day 2 - Panel Session 2</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video5" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel5" data-image="images/resource/consumer-trends.png">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Block Three -->
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/resource/macro.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Economic Factors Impacting Consumer Markets. <br> Day 1 - Panel Session 1</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="images/resource/macro.png">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/resource/tech.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Leveraging Technology for Market Access <br> Day 1 - Panel Session 2</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video2" data-video-url="https://www.youtube.com/embed/RHTkoGTQ6ug?si=H9y399QyK1-Abt1_" data-session="panel2" data-image="images/resource/tech.png">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="#"><img src="images/resource/consumer-centric.png" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            
+                            <h4><a href="#">Consumer-Centric Marketing Strategies. <br> Day 1 - Panel Session 3</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video3" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel3" data-image="images/resource/consumer-centric.png">
+                                Watch Full Session</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --}}
+            </div>
+        </div>
+    </section>
+    <!--End News Section -->
+
+    <section>
+        <div class="container">
+            <div class="row text-center">
+                <div id="modal-switch" tabindex="-1" role="dialog" aria-labelledby="modal-switch-label" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header text-white" style="background: linear-gradient(135deg, #19184d, #2c2b73);">
+                                <div class="d-flex align-items-center">
+                                    <img src="{{ asset('images/logoorange.png') }}" alt="RTM Logo" style="height: 40px; margin-right: 10px;">
+                                    <h5 class="modal-title fw-bold">One Last Step to Unlock Your Resource</h5>
+                                </div>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div class="modal-body row g-0">
+
+                                <!-- Left Side: Visual & Highlights -->
+                                <div class="col-md-5 bg-light p-4 text-start d-flex flex-column justify-content-center">
+                                    <img src="{{ asset('assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
+                                    <h6 class="fw-bold">What You'll Get:</h6>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>📄 <strong>Full conference presentation</strong></li>
+                                        <li>🎥 <strong>On-demand session videos</strong></li>
+                                        <li>💡 <strong>Key insights & takeaways</strong></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Right Side: Form -->
+                                <div class="col-md-7 p-4">
+                                    <p class="text-muted mb-4">Fill in your details and we’ll send your <strong>exclusive RTM Conference 2025 resource</strong> straight to your inbox. We respect your privacy — no spam.</p>
+
+                                    <form action="{{ route('resources.lead') }}" method="POST" id="leadForm" enctype="multipart/form-data">
+                                        @csrf
+                                        <input type="hidden" name="resource_type" id="resource_type">
+                                        <input type="hidden" name="video_url" id="video_url">
+                                        <input type="hidden" name="session_type" id="session_type">
+                                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+                                        <div class="mb-3">
+                                            <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" name="company" class="form-control" placeholder="Company/Organization" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" name="email" class="form-control" placeholder="Company Email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" name="role" class="form-control" placeholder="Role" required>
+                                        </div>
+
+                                        <button class="btn btn-dark w-100 fw-bold py-2" id="recaptcha-button-lead" type="submit">
+                                            <i class="fa fa-paper-plane me-2"></i> Send Me the Resource
+                                        </button>
+                                    </form>
+
+                                    <script>
+                                        document.getElementById('leadForm').addEventListener('submit', function(e) {
+                                            e.preventDefault(); // stop normal submit
+
+                                            grecaptcha.ready(() => {
+                                                grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'submit' })
+                                                .then((token) => {
+                                                    // set token in hidden input
+                                                    document.getElementById('g-recaptcha-response').value = token;
+
+                                                    // submit form AFTER token is set
+                                                    e.target.submit();
+                                                });
+                                            });
+                                        });
+
+                                        document.querySelectorAll('.download-btn').forEach(button => {
+                                            button.addEventListener('click', function () {
+                                                const type = this.getAttribute('data-type');
+                                                const videoUrl = this.getAttribute('data-video-url') || "";
+                                                const sessionType = this.getAttribute('data-session') || "";
+
+                                                document.getElementById('resource_type').value = type;
+                                                document.getElementById('video_url').value = videoUrl;
+                                                document.getElementById('session_type').value = sessionType;
+
+                                                // Optional: update modal title dynamically
+                                                // document.querySelector('#modal-switch .modal-title').innerText = `🚀 Get Your ${type} Resource`;
+                                            });
+                                        });
+
+                                        document.querySelectorAll('.download-btn').forEach(button => {
+                                            button.addEventListener('click', function () {
+                                                const type = this.getAttribute('data-type');
+                                                const videoUrl = this.getAttribute('data-video-url') || "";
+                                                const sessionType = this.getAttribute('data-session') || "";
+                                                const imageSrc = this.getAttribute('data-image') || "{{ asset('assets/media/images/resource-preview.png') }}";
+
+                                                document.getElementById('resource_type').value = type;
+                                                document.getElementById('video_url').value = videoUrl;
+                                                document.getElementById('session_type').value = sessionType;
+
+                                                // Change modal title
+                                                // document.querySelector('#modal-switch .modal-title').innerText = `🚀 Get Your ${type} Resource`;
+
+                                                // Change preview image
+                                                const previewImg = document.querySelector('#modal-switch .modal-body img');
+                                                if (previewImg) {
+                                                    previewImg.src = imageSrc;
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </section>
+
+@endsection

@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class SponsorInquiry extends Model
+{
+    use HasFactory;
+    protected $table = 'potential_sponsors';
+    protected $guarded = [];
+}

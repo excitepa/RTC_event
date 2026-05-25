@@ -1,0 +1,500 @@
+@extends('web.layout.overall')
+@section("page_title", "About")
+@section('content')
+<!--Page Title-->
+<section class="page-title" style="background-image:url(images/background/bg6.png); background-color: rgba(0, 0, 0, 0.5);">
+{{-- <section class="page-title" style="background-image:url(images/background/5.jpg);"> --}}
+    <div class="auto-container">
+        <h1 style="color: #19184D">About Us</h1>
+        <ul class="bread-crumb clearfix">
+            <li style="color: #F5A01C;">
+                <a href="{{ route('index') }}" style="color: inherit; text-decoration: none;">Home</a>
+            </li>            
+            {{-- <li style="color: #F5A01C;"><a href="{{ route('index') }}">Home</a></li> --}}
+            <li style="color: #19184D;">About Us</li>
+            {{-- <li>About Us</li> --}}
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!-- About Section -->
+@if($year == 2025)
+<section class="about-section">
+    <div class="anim-icons full-width">
+        <span class="icon icon-circle-blue wow fadeIn"></span>
+        <span class="icon icon-dots wow fadeInleft"></span>
+        <span class="icon icon-circle-1 wow zoomIn"></span>
+    </div>
+    <div class="auto-container">
+        <div class="row">
+            <!-- Content Column -->
+            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="sec-title">
+                        <span class="title">ABOUT EVENT</span>
+                        <h2>Building a Consumer-
+                            Centric Route-to-Market</h2>
+                        <div class="text">For many years, the Route to Market in West Africa
+                            has remained fragmented and rigid, clinging to
+                            traditional methods despite the evolving needs of the
+                            modern consumer and graying out the partitions
+                            between channels. However, with the emergence of
+                            digitization, there's an opportunity to penetrate and
+                            organize this chaotic landscape, paving the way for
+                            easier navigation through the market.</div>
+                    </div>
+                    <ul class="list-style-one">
+                        <li>Engaging keynote speakers and panel
+                            discussions.</li>
+                        <li>Panel discussions.</li>
+                        <li>Product Presentation.</li>
+                        <li>Interactive Question and Answers.</li>
+                        <li>Social media engagement.</li>
+                        <li>Networking Lunch and Exhibitors Showcase.</li>
+                    </ul>
+                    <div class="btn-box"><a href="{{ route('register') }}" class="theme-btn btn-style-two"><span class="btn-title">Register Now</span></a></div>
+                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="image-box">
+                    <figure class="image wow fadeIn"><img src="images/resource/about.png" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@else
+<section class="about-section">
+    {{-- <div class="anim-icons full-width">
+        <span class="icon icon-circle-blue wow fadeIn"></span>
+        <span class="icon icon-dots wow fadeInleft"></span>
+        <span class="icon icon-circle-1 wow zoomIn"></span>
+    </div> --}}
+    <div class="auto-container">
+        <div class="row">
+            <!-- Content Column -->
+            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="sec-title">
+                        <span class="title">ABOUT EVENT</span>
+                        <h2>The Margin of Trust: Why Community is the New Currency in Fragmented Markets</h2>
+                        <div class="text">West Africa’s route-to-market has long been fragmented, with traditional methods limiting consumer engagement. Today, trust and community are the real currency—brands that build strong connections across distributors, retailers, and local communities can navigate the market more effectively and drive sustainable growth.</div>
+                    </div>
+                    <ul class="list-style-one">
+                        <li>Engaging keynote speakers and panel
+                            discussions.</li>
+                        <li>Panel discussions.</li>
+                        <li>Product Presentation.</li>
+                        <li>Interactive Question and Answers.</li>
+                        <li>Social media engagement.</li>
+                        <li>Networking Lunch and Exhibitors Showcase.</li>
+                    </ul>
+                    {{-- <div class="btn-box"><a href="{{ route('register') }}" class="theme-btn btn-style-two"><span class="btn-title">Register Now</span></a></div> --}}
+                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="image-box">
+                    {{-- <figure class="image wow fadeIn"> --}}
+                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('images/resource/abt.jpg') }}" alt="">
+                        <img style="border-radius: 0; border: 0; box-shadow: none;" src="{{ asset('images/resource/rtm-abt.jpg') }}" alt="">
+                    {{-- </figure> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endif
+<!--End About Section -->
+
+<!-- Fun Fact Section -->
+<section class="fun-fact-section style-two" style="background-image: url(images/background/9.jpg);">
+    <div class="auto-container">
+        <div class="fact-counter">
+            <div class="row clearfix">
+
+                <!--Column-->
+                <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="count-box">
+                        {{-- <span class="icon icon_headphones"></span> --}}
+                        <span class="count-text">+1000</span>
+                        <h4 class="counter-title">Attendees</h4>
+                    </div>
+                </div>
+
+                <!--Column-->
+                <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="count-box">
+                        {{-- <span class="icon icon_ribbon_alt"></span> --}}
+                        <span class="count-text">+25</span>
+                        <h4 class="counter-title">Industry Expert Speakers and Panelists</h4>
+                    </div>
+                </div>
+
+                <!--Column-->
+                <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                    <div class="count-box">
+                        {{-- <span class="icon icon_like"></span> --}}
+                        <span class="count-text">+20</span>
+                        <h4 class="counter-title">Exhibiting Companies</h4>
+                    </div>
+                </div>
+
+                <!--Column-->
+                <div class="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
+                    <div class="count-box">
+                        {{-- <span class="icon icon_book_alt"></span> --}}
+                        <span class="count-text">+21</span>
+                        <h4 class="counter-title">Networking Hours</h4>
+                    </div>
+                </div>
+
+                {{-- <div class="counter-column col-lg-2 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
+                    <div class="count-box">
+                        <span class="icon icon_book_alt"></span>
+                        <span class="count-text" data-speed="3000" data-stop="2">0</span>
+                        <h4 class="counter-title">Days</h4>
+                    </div>
+                </div>
+
+                <div class="counter-column col-lg-2 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
+                    <div class="count-box">
+                        <span class="icon icon_book_alt"></span>
+                        <span class="count-text" data-speed="3000" data-stop="6">0</span>
+                        <h4 class="counter-title">Panel Sessions</h4>
+                    </div>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Fun Fact Section -->
+
+<!-- Features Section Two -->
+{{-- <section class="features-section-two">
+    <div class="auto-container">
+        <div class="anim-icons">
+            <span class="icon twist-line-1 wow zoomIn"></span>
+            <span class="icon twist-line-2 wow zoomIn" data-wow-delay="1s"></span>
+            <span class="icon twist-line-3 wow zoomIn" data-wow-delay="2s"></span>
+        </div>
+
+        <div class="title-block col-lg-4 col-md-12 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+                <div class="sec-title">
+                    <span class="title">Sponsorship</span>
+                    <h2>Ideal Sponsors</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Title Block -->
+            
+            <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box" style="height: 11rem">
+                    <div class="icon-box"><span class="icon flaticon-lecture"></span></div>
+                    <h4><a href="about.html">Fin/Pay Tech</a></h4>
+                    <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                </div>
+            </div>
+
+            <!-- Feature Block -->
+            <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box" style="height: 11rem">
+                    <div class="icon-box"><span class="icon flaticon-lecture"></span></div>
+                    <h4><a href="about.html">CPG Tech providers</a></h4>
+                    <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                </div>
+            </div>
+
+            <!-- Feature Block -->
+            <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="inner-box" style="height: 11rem">
+                    <div class="icon-box"><span class="icon flaticon-search"></span></div>
+                    <h4><a href="about.html">Logistics Provider</a></h4>
+                    <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                </div>
+            </div>
+
+            <!-- Feature Block -->
+            <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                <div class="inner-box" style="height: 11rem">
+                    <div class="icon-box"><span class="icon flaticon-diamond-1"></span></div>
+                    <h4><a href="about.html">FMCG Companies</a></h4>
+                    <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                </div>
+            </div>
+
+            <!-- Feature Block -->
+            <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                <div class="inner-box" style="height: 11rem">
+                    <div class="icon-box"><span class="icon flaticon-success"></span></div>
+                    <h4><a href="about.html">Distribution Businesses</a></h4>
+                    <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                </div>
+            </div>
+
+            <!-- Feature Block -->
+            <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
+                <div class="inner-box" style="height: 11rem">
+                    <div class="icon-box"><span class="icon flaticon-employee"></span></div>
+                    <h4><a href="about.html">Financial Service</a></h4>
+                    <div class="text">Dolor sit amet consectetur elit sed do eiusmod tempor incd.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> --}}
+<!--End Features Section -->
+
+<!-- Call to action -->
+@if($year == 2025)
+<section class="call-to-action" style="background-image: url(images/background/bg4.png); background-image: rgba(0, 0, 0, 0)">
+    <div class="auto-container">
+        <div class="content-box">
+            <div class="text">The Maiden Edition of
+                West African Route To Market
+                Summit</div>
+            <h2 style="color: white">Building a Consumer-
+                Centric Route-to-Market:</h2>
+            <h4 style="margin-top: -1rem">Harnessing Insights and Technology for success.</h4>
+            <div class="btn-box" style="margin-top: 2rem">
+                <a href="{{ route('sponsor.detail') }}" class="theme-btn btn-style-three"><span class="btn-title">Be a partner</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+@else
+<!--<section class="call-to-action" style="background-image: url(images/background/about-banner.jpg); background-image: rgba(0, 0, 0, 0)">-->
+<section class="call-to-action" 
+    style="background-image: url('images/about-ban.png');">
+    <div class="auto-container">
+        <div class="content-box">
+            <div class="text">The Second Edition of
+                West African Route To Market
+                Summit</div>
+            <h2 style="color: white">The Margin of Trust: Why Community is the New Currency in Fragmented Markets</h2>
+            <h4 style="margin-top: -1rem">Why Community is the New Currency in Fragmented Markets.</h4>
+            <div class="btn-box" style="margin-top: 2rem">
+                <a href="{{ route('sponsor.detail') }}" class="theme-btn btn-style-three"><span class="btn-title">Be a partner</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+@endif
+<!--End Call to action -->
+
+ <!-- Event Info Section -->
+@if($year == 2025)
+<section class="event-info-section">
+    <div class="auto-container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="info-column col-lg-6 col-md-12 col-sm-12 order-2">
+                <div class="inner-column">
+                    <div class="sec-title style-two">
+                        <span class="title">Reach us</span>
+                        <h2>Direction for the <br>Event hall</h2>
+                    </div>
+
+                    <div class="event-info-tabs tabs-box">
+                        <!--Tabs Box-->
+                        <ul class="tab-buttons clearfix">
+                            <li class="tab-btn active-btn" data-tab="#tab1">Time</li>
+                            <li class="tab-btn" data-tab="#tab2">Venue</li>
+                            {{-- <li class="tab-btn" data-tab="#tab3">How to</li> --}}
+                        </ul>
+
+                        <div class="tabs-content">
+                            <!--Tab-->
+                            <div class="tab active-tab" id="tab1">
+                                <h4><span class="icon far fa-calendar"></span> June 19th & 20th, 2025</h4>
+                                <div class="text">9.00 AM - 04.00 PM</div>
+                                <ul class="info-list">
+                                    <li><span class="icon icon_profile"></span> Event Coordinator</li>
+                                    <li><span class="icon icon_phone"></span> <a href="tel:+234 705 659 2645">+234 705 659 2645</a></li>
+                                    <li><span class="icon icon_mail"></span> <a href="mailto:events@rtmwestafrica.com">events@rtmwestafrica.com</a></li>
+                                </ul>
+                            </div>
+
+                            <!--Tab-->
+                            <div class="tab" id="tab2">
+                                <h4><span class="icon fa fa-map-marker-alt"></span>Marriott hotel, Lagos, Nigeria</h4>
+                                <div class="text">The Hotel is strategically located in the heart of Ikeja, the capital of Nigeria's commercial city - Lagos. It is 10 minutes drive to the Lagos Domestic and International Airports and set amidst a busy neighborhood featuring shops, restaurants and bars.</div>
+                            </div>
+
+                            <!--Tab-->
+                            {{-- <div class="tab" id="tab3">
+                                <h4><span class="icon fa fa-directions"></span> How to get there</h4>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+                            </div> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="map-column col-lg-6 col-md-12 col-sm-12">
+                <!--Map Outer-->
+                <div class="map-outer">
+                    <!--Map Canvas-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63411.3841493827!2d3.3180679272539884!3d6.620627073154914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b921776d4cd3f%3A0x82bfa6a8a3177ddf!2sLagos%20Marriott%20Hotel%20Ikeja!5e0!3m2!1sen!2sng!4v1742994568132!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25216.765666144616!2d144.9456413371385!3d-37.8112271492458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b8c21cb29b%3A0x1c045678462e3510!2sMelbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2s!4v1599237324751!5m2!1sen!2s" height="435"></iframe>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@else
+<section class="event-info-section">
+    <div class="auto-container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="info-column col-lg-6 col-md-12 col-sm-12 order-2">
+                <div class="inner-column">
+                    <div class="sec-title style-two">
+                        <span class="title">Reach us</span>
+                        <h2>Direction for the <br>Event hall</h2>
+                    </div>
+
+                    <div class="event-info-tabs tabs-box">
+                        <!--Tabs Box-->
+                        <ul class="tab-buttons clearfix">
+                            <li class="tab-btn active-btn" data-tab="#tab1">Time</li>
+                            <li class="tab-btn" data-tab="#tab2">Venue</li>
+                            {{-- <li class="tab-btn" data-tab="#tab3">How to</li> --}}
+                        </ul>
+
+                        <div class="tabs-content">
+                            <!--Tab-->
+                            <div class="tab active-tab" id="tab1">
+                                <h4><span class="icon far fa-calendar"></span> June 18th & 19th, 2026</h4>
+                                <div class="text">9.00 AM - 04.00 PM</div>
+                                <ul class="info-list">
+                                    <li><span class="icon icon_profile"></span> Event Coordinator</li>
+                                    <li><span class="icon icon_phone"></span> <a href="tel:+234-705-659-2645">+234 705 659 2645</a></li>
+                                    <li><span class="icon icon_mail"></span> <a href="mailto:events@rtmwestafrica.com">events@rtmwestafrica.com</a></li>
+                                </ul>
+                            </div>
+
+                            <!--Tab-->
+                            <div class="tab" id="tab2">
+                                <h4><span class="icon fa fa-map-marker-alt"></span>Marriott hotel, Lagos, Nigeria</h4>
+                                <div class="text">The Hotel is strategically located in the heart of Ikeja, the capital of Nigeria's commercial city - Lagos. It is 10 minutes drive to the Lagos Domestic and International Airports and set amidst a busy neighborhood featuring shops, restaurants and bars.</div>
+                            </div>
+
+                            <!--Tab-->
+                            {{-- <div class="tab" id="tab3">
+                                <h4><span class="icon fa fa-directions"></span> How to get there</h4>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+                            </div> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="map-column col-lg-6 col-md-12 col-sm-12">
+                <!--Map Outer-->
+                <div class="map-outer">
+                    <!--Map Canvas-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5000111186587!2d3.3468457731179226!3d6.584595222454215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b921776d4cd3f%3A0x82bfa6a8a3177ddf!2sLagos%20Marriott%20Hotel%20Ikeja!5e0!3m2!1sen!2sng!4v1773776410896!5m2!1sen!2sng" width="600" height="435" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25216.765666144616!2d144.9456413371385!3d-37.8112271492458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b8c21cb29b%3A0x1c045678462e3510!2sMelbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2s!4v1599237324751!5m2!1sen!2s" height="435"></iframe> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endif
+<!--End Event Info Section -->
+
+<!-- App Section -->
+{{-- <section class="app-section">
+    <div class="auto-container">
+        <div class="row">
+            <!-- Content Box -->
+            <div class="content-column col-lg-5 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="sec-title">
+                        <span class="title">App Download</span>
+                        <h2>Eventrox App</h2>
+                    </div>
+                    <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div class="link-box">
+                        <a href="#"><img src="images/icons/app-store.png" alt=""></a>
+                        <a href="#"><img src="images/icons/google-play.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Box -->
+            <div class="image-column col-lg-7 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="image-box">
+                        <figure class="image wow fadeInRight"><img src="images/resource/app-mockup.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> --}}
+<!--End App Section -->
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+    <div class="anim-icons full-width">
+        <span class="icon icon-shape-3 wow fadeIn"></span>
+        <span class="icon icon-line-1 wow fadeIn"></span>
+    </div>
+
+    <div class="auto-container">
+        <!--Subscribe Form-->
+        <div class="subscribe-form wow fadeInUp" data-wow-delay="500ms">
+            <div class="envelope-image"></div>
+            <div class="form-inner">
+                <div class="upper-box">
+                    <div class="sec-title text-center">
+                        <!--<div class="icon-box"><span class="fa fa-envelope"></span></div>-->
+                        <h2>Subscribe for updates</h2>
+                        <div class="text">Experience an inspiring gathering filled with insightful discussions, networking opportunities, and engaging activities.</div>
+                    </div>
+                </div>
+                <form method="POST" action="{{ route('newsletter.submit') }}" id="newsletterForm" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group">
+                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+                        <input type="email" name="email" value="" placeholder="Enter Your Email" required>
+                        <button type="submit" id="recaptcha-button" class="theme-btn"><span class="fa fa-paper-plane"></span></button>
+                    </div>
+                </form>
+
+                @push('scripts')
+                @endpush
+                <script>
+                    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+                        e.preventDefault(); // stop normal submit
+
+                        grecaptcha.ready(() => {
+                            grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'submit' })
+                            .then((token) => {
+                                // set token in hidden input
+                                document.getElementById('g-recaptcha-response').value = token;
+
+                                // submit form AFTER token is set
+                                e.target.submit();
+                            });
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Newsletter Section -->
+@endsection
