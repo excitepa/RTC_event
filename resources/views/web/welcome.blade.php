@@ -868,9 +868,9 @@
 
                                     </div> --}}
 
-                                    <h4><a href="#">Traditional Trade</a></h4>
+                                    <h4><a href="#">Commercial Strategy & Financial Enablement</a></h4>
 
-                                    <div class="text">Explore how building trust with informal retailers and grassroots networks drives competitive advantage in fragmented markets.</div>
+                                    <div class="text">The Margin of Trust: Why Community is the New Currency in Fragmented Markets.</div>
 
                                     {{-- <div class="btn-box">
 
@@ -906,9 +906,9 @@
 
                                     </div> --}}
 
-                                    <h4><a href="#">Brand Authenticity</a></h4>
+                                    <h4><a href="#">Trade Marketing & Brand Development</a></h4>
 
-                                    <div class="text">Examine how brands can build trust by adopting localized storytelling and engaging as community partners.</div>
+                                    <div class="text">Trust at the Shelf: Building Brand Credibility Through Trade Engagement.</div>
 
                                     {{-- <div class="btn-box">
 
@@ -944,9 +944,9 @@
 
                                     </div> --}}
 
-                                    <h4><a href="#">Digital Circles</a></h4>
+                                    <h4><a href="#">Consumer Trends & Insights</a></h4>
 
-                                    <div class="text">Analyze how platforms like WhatsApp and Telegram are transforming trade and strengthening consumer engagement in the trust economy.</div>
+                                    <div class="text">Consumer Trust Economies: Understanding Influence, Communities & Buying Behavior.</div>
 
                                     {{-- <div class="btn-box">
 
@@ -992,9 +992,9 @@
 
                                     </div> --}}
 
-                                    <h4><a href="#">Logistics </a></h4>
+                                    <h4><a href="#">Integrated Supply Chain</a></h4>
 
-                                    <div class="text">Assess innovative solutions and partnerships that improve last-mile delivery and ensure consistent product availability.</div>
+                                    <div class="text">The Sovereignty of Scale: How Mastering Integrated Supply Chains Creates Regional Dominance.</div>
 
                                     {{-- <div class="btn-box">
 
@@ -1030,9 +1030,9 @@
 
                                     </div> --}}
 
-                                    <h4><a href="#">RTM Strategy </a></h4>
+                                    <h4><a href="#">Route-to-Market Strategy, Design & Distribution</a></h4>
 
-                                    <div class="text">Explore how agile route-to-market models can effectively serve both urban and rural markets.</div>
+                                    <div class="text">Adaptive RTM Systems: Optimizing Distribution Across Fragmented Markets.</div>
 
                                     {{-- <div class="btn-box">
 
@@ -1068,9 +1068,9 @@
 
                                     </div> --}}
 
-                                    <h4><a href="#">Supply Chain </a></h4>
+                                    <h4><a href="#">Payments, Trade & Digital Commerce</a></h4>
 
-                                    <div class="text">Examine how cross-border trade and local manufacturing strengthen resilience against global disruptions.</div>
+                                    <div class="text">Connected Commerce Ecosystems: Payments, Trade Infrastructure & Market Flow.</div>
 
                                     {{-- <div class="btn-box">
 

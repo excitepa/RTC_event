@@ -39,6 +39,7 @@ Route::prefix('{year}')
     Route::get('/panel1-resources', [HomeController::class, 'watch_panel1'])->name('watch.panel1');
     Route::get('/panel2-resources', [HomeController::class, 'watch_panel2'])->name('watch.panel2');
     Route::get('/panel3-resources', [HomeController::class, 'watch_panel3'])->name('watch.panel3');
+    Route::get('/fire-side-resources', [HomeController::class, 'sit_down'])->name('watch.sitdown');
     // Route::get('/keynote1-resources', [HomeController::class, 'watch_keynote1'])->name('watch.keynote1');
     // Route::get('/download/keynote/{file}', [FormsController::class, 'downloadKeynote'])->name('download.keynote');
     // Route::get('/download/day1', [FormsController::class, 'downloadDay1'])->name('download.day1');

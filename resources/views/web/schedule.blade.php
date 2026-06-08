@@ -28,6 +28,7 @@
     <!--End Page Title-->
 
     <!-- schedule Section -->
+    @if($year == 2025)
     <section class="schedule-section">
         <div class="anim-icons">
             <span class="icon icon-circle-4 wow zoomIn"></span>
@@ -198,6 +199,177 @@
         </div>
     </section>
     <!--End schedule Section -->
+    @else
+    <section class="schedule-section">
+        <div class="anim-icons">
+            <span class="icon icon-circle-4 wow zoomIn"></span>
+            <span class="icon icon-circle-3 wow zoomIn"></span>
+        </div>
+
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="title">About Conference</span>
+                <h2>Schedule Plan</h2>
+            </div>
+
+            <div class="schedule-tabs tabs-box">
+                <div class="btns-box">
+                    <!--Tabs Box-->
+                    <ul class="tab-buttons clearfix">
+                        <li class="tab-btn active-btn" data-tab="#tab-1">
+                            <span class="day">Day 01</span>
+                            <span class="date">18</span>
+                            <span class="month">June</span> 2026
+                        </li>
+
+                        <li class="tab-btn" data-tab="#tab-2">
+                            <span class="day">Day 02</span>
+                            <span class="date">19</span>
+                            <span class="month">June</span> 2026
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs-content">
+
+                    <!--Tab-->
+                    <div class="tab active-tab" id="tab-1">
+                        <div class="schedule-timeline">
+                            <!-- schedule Block -->
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <!--<div class="date">9.00 AM <br> 10.00 AM</div>-->
+                                        <!--<h5 class="name">Panel Session 1 : Commercial Strategy & Financial Enablement.</h5>-->
+                                        {{-- <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">Ashli Scroggy</h5>
+                                            <span class="designation">Founder & CEO</span>
+                                        </div> --}}
+                                        <h4><a href="#">Commercial Strategy & Financial Enablement.
+                                        </a></h4>
+                                        <div class="text">The Margin of Trust: Why Community is the New Currency in Fragmented Markets.</div>
+                                        {{-- <div class="btn-box">
+                                            <a href="{{ route('event.detail1') }}" class="theme-btn">Read More</a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- schedule Block -->
+                            <div class="schedule-block even">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <!--<div class="date">10.00 AM <br> 11.00 AM</div>-->
+                                        <!--<h5 class="name">Panel Session 2 : Technology.</h5>-->
+                                        {{-- <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                            <h5 class="name">Ashli Scroggy</h5>
+                                            <span class="designation">Founder & CEO</span>
+                                        </div> --}}
+                                        <h4><a href="#">Trade Marketing & Brand Development.
+                                        </a></h4>
+                                        <div class="text">Trust at the Shelf: Building Brand Credibility Through Trade Engagement.</div>
+                                        {{-- <div class="btn-box">
+                                            <a href="{{ route('event.detail2') }}" class="theme-btn">Read More</a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <!--<div class="date">9.00 AM <br> 10.00 AM</div>-->
+                                        <!--<h5 class="name">Panel Session 3 : Marketing.</h5>-->
+                                        {{-- <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">Ashli Scroggy</h5>
+                                            <span class="designation">Founder & CEO</span>
+                                        </div> --}}
+                                        <h4><a href="#">Consumer Trends & Insights.
+                                        </a></h4>
+                                        <div class="text">Consumer Trust Economies: Understanding Influence, Communities & Buying Behavior.</div>
+                                        {{-- <div class="btn-box">
+                                            <a href="{{ route('event.detail1') }}" class="theme-btn">Read More</a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tab-->
+                    <div class="tab" id="tab-2">
+                        <div class="schedule-timeline">
+                            <!-- schedule Block -->
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <!--<div class="date">9.00 AM <br> 10.00 AM</div>-->
+                                        <!--<h5 class="name">Panel Session 4 : Analytics.</h5>-->
+                                        {{-- <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">Ashli Scroggy</h5>
+                                            <span class="designation">Founder & CEO</span>
+                                        </div> --}}
+                                        <h4><a href="#">Integrated Supply Chain. 
+                                        </a></h4>
+                                        <div class="text">The Sovereignty of Scale: How Mastering Integrated Supply Chains Creates Regional Dominance.</div>
+                                        {{-- <div class="btn-box">
+                                            <a href="{{ route('event.detail3') }}" class="theme-btn">Read More</a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- schedule Block -->
+                            <div class="schedule-block even">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <!--<div class="date">10.00 AM <br> 11.00 AM</div>-->
+                                        <!--<h5 class="name">Panel Session 5 : Consumer Trends.</h5>-->
+                                        {{-- <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-2.jpg" alt=""></figure>
+                                            <h5 class="name">Ashli Scroggy</h5>
+                                            <span class="designation">Founder & CEO</span>
+                                        </div> --}}
+                                        <h4><a href="#">Route-to-Market Strategy, Design & Distribution.
+                                            </a></h4>
+                                        <div class="text">Adaptive RTM Systems: Optimizing Distribution Across Fragmented Markets.</div>
+                                        {{-- <div class="btn-box">
+                                            <a href="{{ route('event.detail4') }}" class="theme-btn">Read More</a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule-block">
+                                <div class="inner-box">
+                                    <div class="inner">
+                                        <!--<div class="date">9.00 AM <br> 10.00 AM</div>-->
+                                        <!--<h5 class="name">Panel Session 6 : Commercial.</h5>-->
+                                        {{-- <div class="speaker-info">
+                                            <figure class="thumb"><img src="images/resource/thumb-1.jpg" alt=""></figure>
+                                            <h5 class="name">Ashli Scroggy</h5>
+                                            <span class="designation">Founder & CEO</span>
+                                        </div> --}}
+                                        <h4><a href="#">Payments, Trade & Digital Commerce.
+                                        </a></h4>
+                                        <div class="text">Connected Commerce Ecosystems: Payments, Trade Infrastructure & Market Flow.</div>
+                                        {{-- <div class="btn-box">
+                                            <a href="{{ route('event.detail3') }}" class="theme-btn">Read More</a>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @endif
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">

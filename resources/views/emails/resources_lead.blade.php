@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTM Keynote Speech</title>
+    <title>Route to Market Keynote Speech</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -65,7 +65,7 @@
     <div class="container">
         {{-- <img src="{{ asset('images/email-banner.png') }}" alt="RTM Banner" class="banner"> --}}
         <div class="header">
-            🎤 Your RTM Keynote Speech is Ready!
+            Your Route To Market Keynote Speech is Ready!
         </div>
         <div class="content">
             <p>Hi {{ $lead->full_name }},</p>

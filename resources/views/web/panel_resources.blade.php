@@ -47,72 +47,86 @@
                     </div>
                 </div> --}}
                 
-                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="/public/images/resource/commercial.png" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
+                <!--<div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href="#"><img src="/public/images/resource/commercial.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
                             
-                            <h4><a href="#">Building Effective Sales Strategies. <br> Day 2 - Panel Session3</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video6" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel6" data-image="/public/images/resource/commercial.png">
-                                Watch Full Session</a></div>
-                        </div>
-                    </div>
-                </div>
+                <!--            <h4><a href="#">Building Effective Sales Strategies. <br> Day 2 - Panel Session3</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video6" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel6" data-image="/public/images/resource/commercial.png">-->
+                <!--                Watch Full Session</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 
-                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="/public/images/resource/consumer-trends.png" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
+                <!--<div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href="#"><img src="/public/images/resource/consumer-trends.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
                             
-                            <h4><a href="#">Understanding Consumer Trends in West Africa. <br> Day 2 - Panel Session 2</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video5" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel5" data-image="/public/images/resource/consumer-trends.png">
-                                Watch Full Session</a></div>
-                        </div>
-                    </div>
-                </div>
+                <!--            <h4><a href="#">Understanding Consumer Trends in West Africa. <br> Day 2 - Panel Session 2</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video5" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel5" data-image="/public/images/resource/consumer-trends.png">-->
+                <!--                Watch Full Session</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
 
                 <!-- News Block Three -->
-                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="/public/images/resource/macro.png" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
+                <!--<div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href="#"><img src="/public/images/resource/macro.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
                             
-                            <h4><a href="#">Economic Factors Impacting Consumer Markets. <br> Day 1 - Panel Session 1</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="/public/images/resource/macro.png">
-                                Watch Full Session</a></div>
-                        </div>
-                    </div>
-                </div>
+                <!--            <h4><a href="#">Economic Factors Impacting Consumer Markets. <br> Day 1 - Panel Session 1</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video1" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel1" data-image="/public/images/resource/macro.png">-->
+                <!--                Watch Full Session</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                
+                <!--<div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href="#"><img src="/public/images/resource/tech.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
+                            
+                <!--            <h4><a href="#">Leveraging Technology for Market Access <br> Day 1 - Panel Session 2</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video2" data-video-url="https://www.youtube.com/embed/RHTkoGTQ6ug?si=H9y399QyK1-Abt1_" data-session="panel2" data-image="/public/images/resource/tech.png">-->
+                <!--                Watch Full Session</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                
+                <!--<div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href="#"><img src="/public/images/resource/consumer-centric.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
+                            
+                <!--            <h4><a href="#">Consumer-Centric Marketing Strategies. <br> Day 1 - Panel Session 3</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video3" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel3" data-image="/public/images/resource/consumer-centric.png">-->
+                <!--                Watch Full Session</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="/public/images/resource/tech.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="/public/images/resource/sitdown.jpg" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
-                            <h4><a href="#">Leveraging Technology for Market Access <br> Day 1 - Panel Session 2</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video2" data-video-url="https://www.youtube.com/embed/RHTkoGTQ6ug?si=H9y399QyK1-Abt1_" data-session="panel2" data-image="/public/images/resource/tech.png">
-                                Watch Full Session</a></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="/public/images/resource/consumer-centric.png" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            
-                            <h4><a href="#">Consumer-Centric Marketing Strategies. <br> Day 1 - Panel Session 3</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="video3" data-video-url="https://www.youtube.com/embed/CLp0y0h57tE?si=H3b6O6UBpGg2s5iA" data-session="panel3" data-image="/public/images/resource/consumer-centric.png">
+                            <h4><a href="#">Leading with Trust in Emerging Markets - Building Future-Ready Route-to-Market Teams for Sustainable Growth</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="sitdown" data-video-url="https://www.youtube.com/embed/FMEskzdtC9g?si=-lwCuLkSMDCn4fv0" data-session="sitdown" data-image="/public/images/resource/sitdown.jpg">
                                 Watch Full Session</a></div>
                         </div>
                     </div>

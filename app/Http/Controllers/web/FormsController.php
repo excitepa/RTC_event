@@ -417,6 +417,19 @@ class FormsController extends Controller
                 }
 
                 return redirect()->route('resources.success')->with('success', "Presentation links sent to your email.");
+                
+            } elseif ($request->resource_type === 'sitdown') {
+
+                try {
+                    Mail::to($resource_lead->email)->send(
+                        new VideoResourceLead($resource_lead, 'emails.sit_down_resources_lead')
+                    );
+                } catch (\Exception $e) {
+                    Log::error("Email sending failed: " . $e->getMessage());
+                }
+
+                return redirect()->route('video.resources.success')
+                                ->with('success', "A link to the session has been sent to your email.");
             
             } elseif ($request->resource_type === 'video1') {
 

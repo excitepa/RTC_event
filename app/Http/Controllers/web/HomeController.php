@@ -153,6 +153,11 @@ class HomeController extends Controller
     {
         return view('web.watch_panel6', compact('year'));
     }
+    
+    public function sit_down($year = null)
+    {
+        return view('web.sitdown', compact('year'));
+    }
 
     public function video_success($year = null)
     {

@@ -34,45 +34,58 @@
             <div class="row">
 
                 <!-- News Block Three -->
-                <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href=""><img src="/public/images/resource/day1.png" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
+                <!--<div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href=""><img src="/public/images/resource/day1.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
                             
-                            <h4><a href="#">Building a Consumer-Centric Route to <br> Market - Narendra Nagarkar</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day1.pdf" data-image="/public/images/resource/day1.png">
-                                Download Presentation</a></div>
-                        </div>
-                    </div>
-                </div>
+                <!--            <h4><a href="#">Building a Consumer-Centric Route to <br> Market - Narendra Nagarkar</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day1.pdf" data-image="/public/images/resource/day1.png">-->
+                <!--                Download Presentation</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
 
                 <!-- News Block Three -->
-                <div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">
+                <!--<div class="news-block col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href=""><img src="/public/images/resource/day2.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
+                            
+                <!--            <h4><a href="#">Building Resilience in West Africa’s Dynamic Markets - Oghale Elueni</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day2.pdf" data-image="/public/images/resource/day2.png">-->
+                <!--                Download Presentation</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                
+                <!--<div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="image-box">-->
+                <!--            <figure class="image"><a href=""><img src="/public/images/resource/day1keynote.png" alt=""></a></figure>-->
+                <!--        </div>-->
+                <!--        <div class="lower-content">-->
+                            
+                <!--            <h4><a href="#">Building a Consumer-Centric Route to Market. <br> Day 1 - Keynote Speech</a></h4>-->
+                <!--            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="keynote1" data-video-url="https://www.youtube.com/embed/xiX7szAYI0Y?si=RP7tKxiZy59SIg61" data-session="keynote1" data-image="/public/images/resource/day1keynote.png">-->
+                <!--                Watch Full Session</a></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image"><a href=""><img src="/public/images/resource/day2.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
-                            <h4><a href="#">Building Resilience in West Africa’s Dynamic Markets - Oghale Elueni</a></h4>
+                            <h4><a href="#">Building Resilience in West Africa's Dynamic Markets - Oghale Elueni</a></h4>
                             <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day2.pdf" data-image="/public/images/resource/day2.png">
                                 Download Presentation</a></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href=""><img src="/public/images/resource/day1keynote.png" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            
-                            <h4><a href="#">Building a Consumer-Centric Route to Market. <br> Day 1 - Keynote Speech</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="keynote1" data-video-url="https://www.youtube.com/embed/xiX7szAYI0Y?si=RP7tKxiZy59SIg61" data-session="keynote1" data-image="/public/images/resource/day1keynote.png">
-                                Watch Full Session</a></div>
                         </div>
                     </div>
                 </div>
@@ -169,7 +182,7 @@
                                                 document.getElementById('session_type').value = sessionType;
 
                                                 // Optional: update modal title dynamically
-                                                document.querySelector('#modal-switch .modal-title').innerText = `🚀 Get Your ${type} Resource`;
+                                                document.querySelector('#modal-switch .modal-title').innerText = `Get Your ${type} Resource`;
                                             });
                                         });
 
@@ -185,7 +198,7 @@
                                                 document.getElementById('session_type').value = sessionType;
 
                                                 // Change modal title
-                                                document.querySelector('#modal-switch .modal-title').innerText = `🚀 Get Your ${type} Resource`;
+                                                document.querySelector('#modal-switch .modal-title').innerText = `Get Your ${type} Resource`;
 
                                                 // Change preview image
                                                 const previewImg = document.querySelector('#modal-switch .modal-body img');

@@ -113,7 +113,7 @@
         </div>
 
         <div class="footer">
-            &copy; 2025 Excite Panacea. All rights reserved.
+            &copy; 2026 Excite Panacea. All rights reserved.
         </div>
     </div>
 

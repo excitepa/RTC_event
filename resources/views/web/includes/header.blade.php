@@ -76,7 +76,7 @@
                                 <a href="{{ route('speakers') }}" style="{{ $year != 2025 ? 'color: white' : '' }}">Speakers</a>
                             </li> --}}
                             <li>
-                                <a href="#" style="{{ $year != 2025 ? 'color: white' : '' }}">Speakers</a>
+                                <a href="{{ $editionYear ? route('rtm.speakers', ['year' => $editionYear]) : route('speakers') }}" style="{{ $year != 2025 ? 'color: white' : '' }}">Speakers</a>
                             </li>
                             @endif
 
@@ -86,7 +86,7 @@
                             </li>
                             @else
                             <li>
-                                <a href="#" style="{{ $year != 2025 ? 'color: white' : '' }}">Schedule</a>
+                                <a href="{{ $editionYear ? route('rtm.schedule', ['year' => $editionYear]) : route('schedule') }}" style="{{ $year != 2025 ? 'color: white' : '' }}">Schedule</a>
                             </li>
                             @endif
 
