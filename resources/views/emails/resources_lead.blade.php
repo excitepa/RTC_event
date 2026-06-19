@@ -82,7 +82,7 @@
             <p><strong>Please note:</strong> These download links are valid for <strong>60 minutes</strong> from the time you received this email.</p>
 
             <div class="cta">
-                <a href="{{ $day1Url }}" target="_blank">Download Day 1 Keynote Speech</a>
+                <a href="{{ $day1Url }}" target="_blank">Download Day 2 Keynote Speech</a>
             </div>
             {{-- <div class="cta">
                 <a href="{{ $day2Url }}" target="_blank">Download Day 2 Keynote Speech</a>
