@@ -13,12 +13,14 @@ use App\Mail\VideoResourceLead;
 use App\Http\Controllers\Controller;
 use App\Mail\SponsorInquiry as MailSponsorInquiry;
 use App\Mail\VIPMail;
+use App\Mail\DelegateMail;
 use App\Models\Attendees;
 use App\Models\Contact;
 use App\Models\ResourceLead;
 use App\Mail\Contact as MailContact;
 use App\Models\SponsorInquiry;
 use App\Models\VIP;
+use App\Models\Delegate;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Routing\Exceptions\InvalidSignatureException;
@@ -233,10 +235,44 @@ class FormsController extends Controller
                 $request->validate([
                     'full_name' => ['required', 'string', 'min:2'],
                     
+                    // 'email' => [
+                    //     'bail',
+                    //     'required',
+                    //     'email',
+                    //     Rule::unique('attendees')->where(function ($query) {
+                    //         return $query->where('event_year', date('Y'));
+                    //     }),
+                    // ],
                     'email' => [
                         'bail',
                         'required',
                         'email',
+                        function ($attribute, $value, $fail) {
+                            $blockedDomains = [
+                                'gmail.com',
+                                'hotmail.com',
+                                'outlook.com',
+                                'live.com',
+                                'msn.com',
+                                'yahoo.com',
+                                'ymail.com',
+                                'rocketmail.com',
+                                'aol.com',
+                                'icloud.com',
+                                'me.com',
+                                'mac.com',
+                                'protonmail.com',
+                                'zoho.com',
+                                'gmx.com',
+                                'mail.com'
+                            ];
+                    
+                            $domain = strtolower(substr(strrchr($value, "@"), 1));
+                    
+                            if (in_array($domain, $blockedDomains)) {
+                                $fail('Please use your company email address.');
+                            }
+                        },
                         Rule::unique('attendees')->where(function ($query) {
                             return $query->where('event_year', date('Y'));
                         }),
@@ -596,6 +632,78 @@ class FormsController extends Controller
 
     }
     
+    public function delegate_submit(Request $request)
+    {
+        // dd($request);
+        try {
+            try {
+                $request->validate([
+                    // 'full_name' => 'bail|required|string',
+                    'full_name' => ['required', 'regex:/^[A-Za-z]{2,}\s+[A-Za-z]{2,}.*$/'],
+                    'email' => 'bail|required|email|unique:vip,email',
+                    'company' => 'bail|required|string',
+                    'job_title' => 'bail|required|string',
+                    'attendance_days' => 'required|array',
+                    'attendance_days.*' => 'in:Day 1,Day 2,Day 1 and 2',
+                    'g-recaptcha-response' => ['required', new EventRegister],
+                ]);
+
+            } catch (ValidationException $e) {
+                if ($e->validator->errors()->has('g-recaptcha-response')) {
+                    return back()->withErrors(['g-recaptcha-response' => 'Captcha verification failed. Please try again.'])
+                                ->withInput();
+                }
+                return back()->withErrors($e->validator)->withInput()->withFragment('vipForm');
+            }
+
+            $email = $request->input('email');
+            $apiKey = env('API_KEY'); // Replace with your API key
+            $url = "https://emailvalidation.abstractapi.com/v1/?api_key=$apiKey&email=$email";
+
+            // Initialize cURL
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+
+            // Execute the request and decode the response
+            $response = curl_exec($ch);
+            curl_close($ch);
+            $emailValidation = json_decode($response, true);
+            // dd($emailValidation);
+
+            // Check if the email is valid
+            // if (isset($emailValidation['is_valid_format']['value']) && $emailValidation['is_valid_format']['value'] === true) {
+                // Email is valid, proceed with registration
+                $delegate = new Delegate();
+                $delegate->full_name = $request->full_name;
+                $delegate->email = $request->email;
+                $delegate->company = $request->company;
+                $delegate->job_title = $request->job_title;
+                $delegate->attendance_days = json_encode($request->attendance_days);
+                $delegate->save();
+
+                try {
+                    Mail::to($delegate->email)->send(new DelegateMail($delegate));
+                } catch (\Exception $e) {
+                    Log::error("Email sending failed: " . $e->getMessage());
+                }
+
+                return redirect()->route('delegate.registered')->with("success", "Your have successfully confirmed!");
+
+                // return redirect()->back()->with('success', "You have successfully registered for the webinar.");
+            // } else {
+            //     // Invalid email format
+            //     return back()->with('danger', "Invalid email address, please try again.");
+            // }
+        } catch (ValidationException $th) {
+            return back()->with('danger', $th->validator->errors()->first())->withInput();
+        } catch (\Throwable $th) {
+            return back()->with('danger', $th->getMessage())->withInput();
+        }
+
+
+    }
     
     public function eventRegistered($year = null)
     {
@@ -610,6 +718,11 @@ class FormsController extends Controller
     public function vipRegistered($year = null)
     {
         return view('web.vip-success', compact('year'));
+    }
+    
+    public function delegateRegistered($year = null)
+    {
+        return view('web.delegate-success', compact('year'));
     }
 
     public function contact(Request $request)
@@ -659,14 +772,14 @@ class FormsController extends Controller
     
     public function downloadDay1(Request $request)
     {
-        $path = public_path('assets/resources/building_a_consumer-centric_route-to-market_in_west_africa.pdf');
-        return response()->download($path, 'Building a Consumer-Centric Route-to-Market in West Africa.pdf');
+        $path = public_path('assets/resources/margins_of_trust_the_informal_economy_inclusion_and_the_future_of_west_african_commerce.pdf');
+        return response()->download($path, 'Margins of Trust: The Informal Economy, Inclusion and the Future of West African Commerce.pdf');
     }
 
     public function downloadDay2(Request $request)
     {
-        $path = public_path("assets/resources/building_resilience_in_west_africa's_dynamic_markets.pdf");
-        return response()->download($path, "Building Resilience in West Africa's Dynamic Markets.pdf");
+        $path = public_path("assets/resources/the_sovereignty_of_scale_how_mastering_integrated_supply_chains_creates_regional_dominance_in_fmcg.pdf");
+        return response()->download($path, "The Sovereignty of Scale: How Mastering Integrated Supply Chains Creates Regional Dominance in FMCG.pdf");
     }
     
     public function resources_success($year = null)

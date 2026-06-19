@@ -98,6 +98,11 @@ class HomeController extends Controller
     {
         return view('web.vip', compact('year'));
     }
+    
+    public function delegate($year = null)
+    {
+        return view('web.delegate', compact('year'));
+    }
 
     public function privacy($year = null)
     {

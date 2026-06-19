@@ -13,18 +13,15 @@ return new class extends Migration
     {
         Schema::create('attendees', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name')->nullable();
-            $table->string('email')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('company')->nullable();
-            $table->string('industry')->nullable();
-            $table->string('job_title')->nullable();
-            $table->string('country')->nullable();
-            $table->string('about_webinar')->nullable();
-            $table->string('message')->nullable();
-            $table->string('event_year')->nullable();
-            $table->string('company_size')->nullable();
-            $table->string('seniority_level')->nullable();
+            $table->string('full_name');
+            $table->string('email')->unique();
+            $table->string('phone');
+            $table->string('company');
+            $table->string('industry');
+            $table->string('job_title');
+            $table->string('country');
+            $table->string('about_webinar');
+            $table->string('message');
             $table->timestamps();
         });
     }

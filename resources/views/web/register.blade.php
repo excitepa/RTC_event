@@ -385,6 +385,21 @@
                                 });
                             </script>
                             
+                            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                            
+                            @if ($errors->any())
+                            <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Registration Error',
+                                    html: `{!! implode('<br>', $errors->all()) !!}`,
+                                    confirmButtonText: 'OK'
+                                });
+                            });
+                            </script>
+                            @endif
+                            
                         </div>
                     </div>
                 </div>

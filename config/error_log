@@ -490,3 +490,27 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/exciomkr/rtmwestafrica.com/config/filesystems.php on line 16
+[09-Jun-2026 13:33:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/exciomkr/rtmwestafrica.com/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/exciomkr/rtmwestafrica.com/config/database.php on line 19
+[09-Jun-2026 13:33:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/exciomkr/rtmwestafrica.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/exciomkr/rtmwestafrica.com/config/app.php on line 19
+[16-Jun-2026 17:32:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/exciomkr/rtmwestafrica.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/exciomkr/rtmwestafrica.com/config/app.php on line 19
+[16-Jun-2026 17:32:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/exciomkr/rtmwestafrica.com/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/exciomkr/rtmwestafrica.com/config/database.php on line 19
+[18-Jun-2026 14:59:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/exciomkr/rtmwestafrica.com/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/exciomkr/rtmwestafrica.com/config/database.php on line 19
+[18-Jun-2026 14:59:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/exciomkr/rtmwestafrica.com/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/exciomkr/rtmwestafrica.com/config/app.php on line 19

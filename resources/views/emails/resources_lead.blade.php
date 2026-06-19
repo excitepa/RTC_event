@@ -74,8 +74,8 @@
 
             <p><strong>Inside the download:</strong></p>
             <ul>
-                <li>Day 1 Keynote Speech by Narendra Nagarkar – Building a Consumer-Centric Route to Market</li>
-                <li>Day 2 Keynote Speech by Oghale Elueni – Building Resilience in West Africa’s Dynamic Markets</li>
+                <li>Day 2 Keynote Speech by Kayode Oladapo – The Sovereignty of Scale: How Mastering Integrated Supply Chains Creates Regional Dominance in FMCG</li>
+                {{-- <li>Day 2 Keynote Speech by Oghale Elueni – Building Resilience in West Africa’s Dynamic Markets</li> --}}
                 <li>Bonus insights and actionable strategies</li>
             </ul>
 
@@ -84,9 +84,9 @@
             <div class="cta">
                 <a href="{{ $day1Url }}" target="_blank">Download Day 1 Keynote Speech</a>
             </div>
-            <div class="cta">
+            {{-- <div class="cta">
                 <a href="{{ $day2Url }}" target="_blank">Download Day 2 Keynote Speech</a>
-            </div>
+            </div> --}}
 
             <p>If you experience any issues accessing the files, feel free to reach out to us at <a href="mailto:events@rtmwestafrica.com">events@rtmwestafrica.com</a>.</p>
 
@@ -94,7 +94,7 @@
         </div>
 
         <div class="footer">
-            &copy; 2025 Excite Panacea. All rights reserved.
+            &copy; 2026 Excite Panacea. All rights reserved.
         </div>
     </div>
 </body>

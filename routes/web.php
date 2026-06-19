@@ -77,7 +77,7 @@ Route::get('/event-detail/leveraging-technology-for-market-access', [HomeControl
 Route::get('/event-detail/understanding-consumer-trends-in-west-africa', [HomeController::class, 'event_detail4'])->name('event.detail4');
 Route::get('/event-detail/data-driven-decision-making', [HomeController::class, 'event_detail4'])->name('event.detail5');
 Route::get('/event-detail/building-effective-sales-strategies', [HomeController::class, 'event_detail4'])->name('event.detail6');
-Route::get('/keynote-resources', [HomeController::class, 'keynote_resources'])->name('keynote.resources');
+Route::get('/2026/day1-keynote', [HomeController::class, 'keynote_resources'])->name('keynote.resources');
 Route::get('/panel-resources', [HomeController::class, 'panel_resources'])->name('panel.resources');
 Route::get('/event-resources', [HomeController::class, 'resources'])->name('event-resources');
 Route::post('/resources-lead', [FormsController::class, 'resources_lead'])->name('resources.lead');
@@ -99,13 +99,16 @@ Route::get('/download/day2', [FormsController::class, 'downloadDay2'])
     ->middleware('signed');
 Route::get('/register', [HomeController::class, 'register'])->name('register');
 Route::get('/vip', [HomeController::class, 'vip'])->name('vip');
+Route::get('/delegate', [HomeController::class, 'delegate'])->name('delegate');
 Route::post('/newsletter', [FormsController::class, 'newsletter'])->name('newsletter.submit');
 Route::post('/sponsor-inquiry', [FormsController::class, 'inquiry'])->name('inquiry');
 Route::post('/attendee', [FormsController::class, 'attendee'])->name('attendee.signup');
 Route::post('/vip-submit', [FormsController::class, 'vip_submit'])->name('vip.submit');
+Route::post('/delegate-submit', [FormsController::class, 'delegate_submit'])->name('delegate.submit');
 Route::get('/attendee-registered', [FormsController::class, 'eventRegistered'])->name('event.registered');
-    Route::get('/inquiry-successful', [FormsController::class, 'inquirySuccessful'])->name('inquiry.successful');
+Route::get('/inquiry-successful', [FormsController::class, 'inquirySuccessful'])->name('inquiry.successful');
 Route::get('/vip-registered', [FormsController::class, 'vipRegistered'])->name('vip.registered');
+Route::get('/delegate-registered', [FormsController::class, 'delegateRegistered'])->name('delegate.registered');
 Route::post('/contact', [FormsController::class, 'contact'])->name('contact');
 Route::get('/privacypolicy', [HomeController::class, 'privacy'])->name('privacy');
 

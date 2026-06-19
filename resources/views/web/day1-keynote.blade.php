@@ -28,7 +28,7 @@
         <div class="auto-container">
             <div class="sec-title text-center">
                 <!--<span class="title">RTM 2025 Resources</span>-->
-                <h2>Day 1 Keynote Presentation</h2>
+                <h2>Keynote Presentations</h2>
             </div>
 
             <div class="row">
@@ -79,12 +79,14 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href=""><img src="/public/images/resource/day2keynote.png" alt=""></a></figure>
+                            <figure class="image"><a href=""><img src="/public/images/resource/day1keynote.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
-                            <h4><a href="#">THE SOVEREIGNTY OF SCALE: HOW MASTERING INTEGRATED SUPPLY CHAINS CREATES REGIONAL DOMINANCE IN FMCG - Kayode Oladapo</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day1keynote.pdf" data-image="/public/images/resource/day2Keynote.png">
+                            <h4><a href="#">MARGINS OF TRUST: 
+THE INFORMAL ECONOMY, INCLUSION, AND THE FUTURE OF WEST AFRICAN COMMERCE
+ - Farouk Gumel</a></h4>
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day2.pdf" data-image="/public/images/resource/day2.png">
                                 Download Presentation</a></div>
                         </div>
                     </div>
