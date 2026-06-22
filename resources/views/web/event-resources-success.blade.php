@@ -32,7 +32,7 @@
         <div class="auto-container">
             <h2>Thank You for Your Interest!</h2>
             <div class="text" style="font-size: 20px;">
-                The keynote presentations from the <strong>Route to Market West Africa/strong> event have been sent to the email address you provided.
+                The keynote presentations from the <strong>Route to Market West Africa</strong> event have been sent to the email address you provided.
             </div>
             <div class="text" style="font-size: 20px;">
                 Please check your inbox (and your spam folder just in case) for the download link. We hope you find the insights valuable and inspiring. <br> If you have any questions or need further assistance, feel free to reach out.

@@ -109,9 +109,14 @@ class HomeController extends Controller
         return view('web.privacy', compact('year'));
     }   
 
-    public function keynote_resources($year = null)
+    public function day1_keynote_resources($year = null)
     {
-        return view('web.keynote_resources', compact('year'));
+        return view('web.day1_keynote_resources', compact('year'));
+    }
+
+    public function day2_keynote_resources($year = null)
+    {
+        return view('web.day2_keynote_resources', compact('year'));
     }
 
     public function panel_resources($year = null)

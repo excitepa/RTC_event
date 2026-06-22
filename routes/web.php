@@ -77,7 +77,8 @@ Route::get('/event-detail/leveraging-technology-for-market-access', [HomeControl
 Route::get('/event-detail/understanding-consumer-trends-in-west-africa', [HomeController::class, 'event_detail4'])->name('event.detail4');
 Route::get('/event-detail/data-driven-decision-making', [HomeController::class, 'event_detail4'])->name('event.detail5');
 Route::get('/event-detail/building-effective-sales-strategies', [HomeController::class, 'event_detail4'])->name('event.detail6');
-Route::get('/2026/day2-keynote', [HomeController::class, 'keynote_resources'])->name('keynote.resources');
+Route::get('/2026/day1-keynote', [HomeController::class, 'day1_keynote_resources'])->name('keynote.resources');
+Route::get('/2026/day2-keynote', [HomeController::class, 'day2_keynote_resources'])->name('keynote.resources');
 Route::get('/panel-resources', [HomeController::class, 'panel_resources'])->name('panel.resources');
 Route::get('/event-resources', [HomeController::class, 'resources'])->name('event-resources');
 Route::post('/resources-lead', [FormsController::class, 'resources_lead'])->name('resources.lead');

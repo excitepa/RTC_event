@@ -28,7 +28,7 @@
         <div class="auto-container">
             <div class="sec-title text-center">
                 <!--<span class="title">RTM 2025 Resources</span>-->
-                <h2>Day 1 Keynote Presentation</h2>
+                <h2>Day 2 Keynote Presentation</h2>
             </div>
 
             <div class="row">
@@ -84,7 +84,7 @@
                         <div class="lower-content">
                             
                             <h4><a href="#">THE SOVEREIGNTY OF SCALE: HOW MASTERING INTEGRATED SUPPLY CHAINS CREATES REGIONAL DOMINANCE IN FMCG - Kayode Oladapo</a></h4>
-                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day1keynote.pdf" data-image="/public/images/resource/day2Keynote.png">
+                            <div class="btn-box"><a href="#" data-toggle="modal" data-target="#modal-switch" class="read-more download-btn" data-type="download" data-presentation-url="assets/resources/day2keynote.pdf" data-image="/public/images/resource/day2Keynote.png">
                                 Download Presentation</a></div>
                         </div>
                     </div>
