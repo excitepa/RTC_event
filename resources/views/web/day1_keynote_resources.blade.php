@@ -79,7 +79,7 @@
                 <div class="news-block col-lg-12 col-md-12 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href=""><img src="/public/images/resource/day2Keynote.png" alt=""></a></figure>
+                            <figure class="image"><a href=""><img src="/public/images/resource/day1Keynote.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
