@@ -196,7 +196,7 @@
                             <!--    </div>-->
                             <!--</form>-->
                             
-                            <form method="POST" action="{{ route('attendee.signup') }}" id="registertestForm" enctype="multipart/form-data">
+                            {{-- <form method="POST" action="{{ route('attendee.signup') }}" id="registertestForm" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row clearfix">
                                     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
@@ -344,7 +344,7 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> --}}
 
                             <script>
                                 function toggleOther(selectId, inputId, triggerValue = 'Other') {
