@@ -117,7 +117,7 @@
 
                                 <!-- Left Side: Visual & Highlights -->
                                 <div class="col-md-5 bg-light p-4 text-start d-flex flex-column justify-content-center">
-                                    <img src="{{ asset('/public/assets/media/images/resource-preview.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
+                                    <img src="{{ asset('images/resource/day2Keynote.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
                                     <h6 class="fw-bold">What You'll Get:</h6>
                                     <ul class="list-unstyled mb-0">
                                         <li>📄 <strong>Full conference presentation</strong></li>
