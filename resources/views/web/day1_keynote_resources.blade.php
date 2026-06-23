@@ -80,7 +80,7 @@
 
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href=""><img src="/public/images/resource/day-keynote.png" alt=""></a></figure>
+                            <figure class="image"><a href=""><img src="/public/images/resource/day1Keynote.png" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             
@@ -118,7 +118,7 @@
 
                                 <!-- Left Side: Visual & Highlights -->
                                 <div class="col-md-5 bg-light p-4 text-start d-flex flex-column justify-content-center">
-                                    <img src="{{ asset('images/resource/day-keynote.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
+                                    <img src="{{ asset('images/resource/day1Keynote.png') }}" class="img-fluid mb-3 rounded-3 shadow-sm" alt="Resource Preview">
                                     <h6 class="fw-bold">What You'll Get:</h6>
                                     <ul class="list-unstyled mb-0">
                                         <li>📄 <strong>Full conference presentation</strong></li>
