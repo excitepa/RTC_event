@@ -67,8 +67,10 @@
                                         <th></th>
                                         <th>Full Name</th>
                                         <th>Email</th>
+                                        <th>Phone</th>
                                         <th>Company</th>
                                         <th>Role/Job Title</th>
+                                        <th>Lead Source</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -98,6 +100,14 @@
                                         </td>
                                         <td>
                                             <div>
+                                                {{-- <span class="font-weight-bolder">Phone</span> --}}
+                                                <a class="text-muted font-weight-bold text-hover-primary" href="#" style="text-decoration: none">
+                                                    {{ $resource_lead->phone }}
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
                                                 {{-- <span class="font-weight-bolder">Customer Reference</span> --}}
                                                 <a class="text-muted font-weight-bold text-hover-primary" href="#" style="text-decoration: none">
                                                     {{ $resource_lead->company }}
@@ -109,6 +119,14 @@
                                                 {{-- <span class="font-weight-bolder">Customer Reference</span> --}}
                                                 <a class="text-muted font-weight-bold text-hover-primary" href="#" style="text-decoration: none">
                                                     {{ $resource_lead->role }}
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                {{-- <span class="font-weight-bolder">Customer Reference</span> --}}
+                                                <a class="text-muted font-weight-bold text-hover-primary" href="#" style="text-decoration: none">
+                                                    {{ $resource_lead->lead_source ?? 'N/A' }}
                                                 </a>
                                             </div>
                                         </td>
