@@ -133,6 +133,7 @@
 
                                     <form action="{{ route('resources.lead') }}" method="POST" id="leadForm" enctype="multipart/form-data">
                                         @csrf
+                                        <input type="hidden" name="lead_source" id="lead_source">
                                         <input type="hidden" name="resource_type" id="resource_type">
                                         <input type="hidden" name="video_url" id="video_url">
                                         <input type="hidden" name="session_type" id="session_type">
@@ -148,10 +149,16 @@
                                             <input type="email" name="email" class="form-control" placeholder="Company Email" required>
                                         </div>
                                         <div class="mb-3">
+                                            <input type="phone" name="phone" class="form-control" placeholder="Phone Number" required>
+                                        </div>
+                                        <div class="mb-3">
                                             <input type="text" name="role" class="form-control" placeholder="Role" required>
                                         </div>
 
-                                        <button class="btn btn-dark w-100 fw-bold py-2" id="recaptcha-button-lead" type="submit">
+                                        <button class="btn btn-dark w-100 fw-bold py-2" id="recaptcha-button-lead" type="submit" data-type="Presentation"
+                                            data-session="Keynote"
+                                            data-source="Day 1 Keynote"
+                                            data-image="{{ asset('images/resource/day1Keynote.png') }}">
                                             <i class="fa fa-paper-plane me-2"></i> Send Me the Resource
                                         </button>
                                     </form>
@@ -177,31 +184,17 @@
                                                 const type = this.getAttribute('data-type');
                                                 const videoUrl = this.getAttribute('data-video-url') || "";
                                                 const sessionType = this.getAttribute('data-session') || "";
+                                                const leadSource = this.getAttribute('data-source') || "";
+                                                const imageSrc = this.getAttribute('data-image');
 
                                                 document.getElementById('resource_type').value = type;
                                                 document.getElementById('video_url').value = videoUrl;
                                                 document.getElementById('session_type').value = sessionType;
+                                                document.getElementById('lead_source').value = leadSource;
 
-                                                // Optional: update modal title dynamically
-                                                document.querySelector('#modal-switch .modal-title').innerText = `Get Your ${type} Resource`;
-                                            });
-                                        });
+                                                document.querySelector('#modal-switch .modal-title').innerText =
+                                                    `Get Your ${type} Resource`;
 
-                                        document.querySelectorAll('.download-btn').forEach(button => {
-                                            button.addEventListener('click', function () {
-                                                const type = this.getAttribute('data-type');
-                                                const videoUrl = this.getAttribute('data-video-url') || "";
-                                                const sessionType = this.getAttribute('data-session') || "";
-                                                const imageSrc = this.getAttribute('data-image') || "{{ asset('assets/media/images/resource-preview.png') }}";
-
-                                                document.getElementById('resource_type').value = type;
-                                                document.getElementById('video_url').value = videoUrl;
-                                                document.getElementById('session_type').value = sessionType;
-
-                                                // Change modal title
-                                                document.querySelector('#modal-switch .modal-title').innerText = `Get Your ${type} Resource`;
-
-                                                // Change preview image
                                                 const previewImg = document.querySelector('#modal-switch .modal-body img');
                                                 if (previewImg) {
                                                     previewImg.src = imageSrc;
