@@ -133,8 +133,9 @@
 
                                     <form action="{{ route('resources.lead') }}" method="POST" id="leadForm" enctype="multipart/form-data">
                                         @csrf
-                                        <input type="hidden" name="lead_source" id="lead_source">
-                                        <input type="hidden" name="resource_type" id="resource_type">
+                                        {{-- <input type="hidden" name="resource_type" value="keynote1"> --}}
+                                        {{-- <input type="hidden" name="session_type" value="Keynote"> --}}
+                                        <input type="hidden" name="lead_source" value="Day 1 Keynote">
                                         <input type="hidden" name="video_url" id="video_url">
                                         <input type="hidden" name="session_type" id="session_type">
                                         <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
@@ -187,10 +188,10 @@
                                                 const leadSource = this.getAttribute('data-source') || "";
                                                 const imageSrc = this.getAttribute('data-image');
 
-                                                document.getElementById('resource_type').value = type;
+                                                // document.getElementById('resource_type').value = type;
                                                 document.getElementById('video_url').value = videoUrl;
                                                 document.getElementById('session_type').value = sessionType;
-                                                document.getElementById('lead_source').value = leadSource;
+                                                // document.getElementById('lead_source').value = leadSource;
 
                                                 document.querySelector('#modal-switch .modal-title').innerText =
                                                     `Get Your ${type} Resource`;
