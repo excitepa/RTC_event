@@ -440,8 +440,8 @@ class FormsController extends Controller
                 'company'      => $request->company,
                 'role'         => $request->role,
                 'phone'        => $request->phone,
-                // 'resource_type'=> $request->resource_type,
-                // 'session_type' => $request->session_type,
+                'resource_type'=> $request->resource_type,
+                'session_type' => $request->session_type,
                 'lead_source'  => $request->lead_source,
             ]);
 
