@@ -446,8 +446,13 @@ class FormsController extends Controller
             ]);
 
             if ($request->resource_type === 'download') {
-                $day1Url = URL::temporarySignedRoute('download.day1', now()->addMinutes(60), ['email' => $request->email]);
-                $day2Url = URL::temporarySignedRoute('download.day2', now()->addMinutes(60), ['email' => $request->email]);
+                $day1Url = URL::signedRoute('download.day1', [
+                    'email' => $request->email
+                ]);
+
+                $day2Url = URL::signedRoute('download.day2', [
+                    'email' => $request->email
+                ]);
 
                 try {
                     Mail::to($lead->email)->send(new MailResourceLead($lead, $day1Url, $day2Url));
