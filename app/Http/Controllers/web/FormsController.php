@@ -417,7 +417,6 @@ class FormsController extends Controller
     
     public function resources_lead(Request $request)
     {
-        // dd($request);
         try {
             $request->validate([
                 'full_name' => 'bail|required|string',
@@ -426,13 +425,13 @@ class FormsController extends Controller
                 'role' => 'bail|required|string',
                 'phone' => 'bail|required|string',
                 'g-recaptcha-response' => ['required', new EventRegister],
-                // 'resource_type' => 'required|in:download,video,video1',
                 'resource_type' => 'required',
                 'session_type' => 'nullable|string',
                 'video_url' => 'nullable|url',
             ]);
+
+            Log::info('Resource lead request data: ', $request->all());
             
-            // $resource_lead = ResourceLead::where('email', $request->email)->first();
 
             $lead = ResourceLead::create([
                 'full_name'    => $request->full_name,
@@ -446,7 +445,7 @@ class FormsController extends Controller
             ]);
 
             if ($request->resource_type === 'download') {
-                // $day1Url = URL::temporarySignedRoute('download.day1', now()->addMinutes(60), ['email' => $request->email]);
+                $day1Url = URL::temporarySignedRoute('download.day1', now()->addMinutes(60), ['email' => $request->email]);
                 // $day2Url = URL::temporarySignedRoute('download.day2', now()->addMinutes(60), ['email' => $request->email]);
 
                 $day1Url = URL::signedRoute('download.day1', [
