@@ -137,23 +137,42 @@
                                         <input type="hidden" name="session_type" value="Keynote">
                                         <input type="hidden" name="lead_source" value="Day 1 Keynote">
                                         <input type="hidden" name="video_url" id="video_url">
-                                        <input type="hidden" name="session_type" id="session_type">
                                         <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
                                         <div class="mb-3">
-                                            <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+                                            {{-- <input type="text" name="full_name" class="form-control" placeholder="Full Name" required> --}}
+                                            <input type="text" name="full_name" class="form-control" value="{{ old('full_name') }}" placeholder="Full Name" required
+                                                pattern="^[A-Za-z]{2,}\s+[A-Za-z]{2,}.*$"
+                                                title="Please enter your full name (first and last name)"
+                                                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" name="company" class="form-control" placeholder="Company/Organization" required>
+                                            {{-- <input type="text" name="company" class="form-control" placeholder="Company/Organization" required> --}}
+                                            <input type="text" name="company" class="form-control" value="{{ old('company') }}" placeholder="Organization" required
+                                                pattern="[A-Za-z\s]{2,}"
+                                                title="Enter a valid company name"
+                                                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="email" name="email" class="form-control" placeholder="Company Email" required>
+                                            {{-- <input type="email" name="email" class="form-control" placeholder="Company Email" required> --}}
+                                            <input type="email" name="email" class="form-control" value="{{ old('email') }}" placeholder="Work Email" required
+                                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                                title="Enter a valid company email (e.g., user@company.com)">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="phone" name="phone" class="form-control" placeholder="Phone Number" required>
+                                            {{-- <input type="phone" name="phone" class="form-control" placeholder="Phone Number" required> --}}
+                                            <input type="text" name="phone" class="form-control" value="{{ old('phone') }}" placeholder="Phone" required
+                                                pattern="^\+?[0-9]{7,15}$"
+                                                title="Enter a valid phone number (without spaces or letters)"
+                                                inputmode="numeric"
+                                                oninput="this.value = this.value.replace(/[^0-9+]/g, '')">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" name="role" class="form-control" placeholder="Role" required>
+                                            {{-- <input type="text" name="role" class="form-control" placeholder="Role" required> --}}
+                                            <input type="text" name="role" class="form-control" value="{{ old('role') }}" placeholder="Role" required
+                                                pattern="[A-Za-z\s]{2,}"
+                                                title="Role at above company"
+                                                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')">
                                         </div>
 
                                         <button class="btn btn-dark w-100 fw-bold py-2" id="recaptcha-button-lead" type="submit" data-type="Presentation"
@@ -188,10 +207,10 @@
                                                 const leadSource = this.getAttribute('data-source') || "";
                                                 const imageSrc = this.getAttribute('data-image');
 
-                                                // document.getElementById('resource_type').value = type;
-                                                // document.getElementById('video_url').value = videoUrl;
-                                                // document.getElementById('session_type').value = sessionType;
-                                                // document.getElementById('lead_source').value = leadSource;
+                                                document.getElementById('resource_type').value = type;
+                                                document.getElementById('video_url').value = videoUrl;
+                                                document.getElementById('session_type').value = sessionType;
+                                                document.getElementById('lead_source').value = leadSource;
 
                                                 document.querySelector('#modal-switch .modal-title').innerText =
                                                     `Get Your ${type} Resource`;

@@ -446,13 +446,8 @@ class FormsController extends Controller
             ]);
 
             if ($request->resource_type === 'download') {
-                $day1Url = URL::signedRoute('download.day1', [
-                    'email' => $request->email
-                ]);
-
-                $day2Url = URL::signedRoute('download.day2', [
-                    'email' => $request->email
-                ]);
+                $day1Url = URL::temporarySignedRoute('download.day1', now()->addMinutes(60), ['email' => $request->email]);
+                $day2Url = URL::temporarySignedRoute('download.day2', now()->addMinutes(60), ['email' => $request->email]);
 
                 try {
                     Mail::to($lead->email)->send(new MailResourceLead($lead, $day1Url, $day2Url));
@@ -549,7 +544,21 @@ class FormsController extends Controller
 
                 try {
                     Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.keynote1_resources_lead')
+                        new VideoResourceLead($lead, 'emails.resources_lead')
+                    );
+                } catch (\Exception $e) {
+                    Log::error("Email sending failed: " . $e->getMessage());
+                }
+
+                return redirect()->route('video.resources.success')
+                                ->with('success', "A link to the session has been sent to your email.");
+            }
+
+            elseif ($request->resource_type === 'keynote2') {
+
+                try {
+                    Mail::to($lead->email)->send(
+                        new VideoResourceLead($lead, 'emails.resources_lead')
                     );
                 } catch (\Exception $e) {
                     Log::error("Email sending failed: " . $e->getMessage());
