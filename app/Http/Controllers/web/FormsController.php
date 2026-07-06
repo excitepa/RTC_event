@@ -444,10 +444,6 @@ class FormsController extends Controller
                 'lead_source'  => $request->lead_source,
             ]);
 
-            if ($request->resource_type === 'download') {
-                $day1Url = URL::temporarySignedRoute('download.day1', now()->addMinutes(60), ['email' => $request->email]);
-                // $day2Url = URL::temporarySignedRoute('download.day2', now()->addMinutes(60), ['email' => $request->email]);
-
                 $day1Url = URL::signedRoute('download.day1', [
                     'email' => $request->email
                 ]);
@@ -455,103 +451,12 @@ class FormsController extends Controller
                 $day2Url = URL::signedRoute('download.day2', [
                     'email' => $request->email
                 ]);
-
-                try {
-                    Mail::to($lead->email)->send(new MailResourceLead($lead, $day1Url, $day2Url));
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('resources.success')->with('success', "Presentation links sent to your email.");
-                
-            } elseif ($request->resource_type === 'sitdown') {
-
-                try {
-                    Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.sit_down_resources_lead')
-                    );
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('video.resources.success')
-                                ->with('success', "A link to the session has been sent to your email.");
             
-            } elseif ($request->resource_type === 'video1') {
+            if ($request->resource_type === 'keynote1') {
 
                 try {
                     Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.video1_resources_lead')
-                    );
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('video.resources.success')
-                                ->with('success', "A link to the session has been sent to your email.");
-            }
-            
-            elseif ($request->resource_type === 'video2') {
-
-                try {
-                    Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.video2_resources_lead')
-                    );
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('video.resources.success')
-                                ->with('success', "A link to the session has been sent to your email.");
-            }
-            
-            elseif ($request->resource_type === 'video3') {
-
-                try {
-                    Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.video3_resources_lead')
-                    );
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('video.resources.success')
-                                ->with('success', "A link to the session has been sent to your email.");
-            }
-            
-            elseif ($request->resource_type === 'video5') {
-
-                try {
-                    Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.video5_resources_lead')
-                    );
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('video.resources.success')
-                                ->with('success', "A link to the session has been sent to your email.");
-            }
-            
-            elseif ($request->resource_type === 'video6') {
-
-                try {
-                    Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.video6_resources_lead')
-                    );
-                } catch (\Exception $e) {
-                    Log::error("Email sending failed: " . $e->getMessage());
-                }
-
-                return redirect()->route('video.resources.success')
-                                ->with('success', "A link to the session has been sent to your email.");
-            }
-            
-            elseif ($request->resource_type === 'keynote1') {
-
-                try {
-                    Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.resources_lead')
+                        new VideoResourceLead($lead, 'emails.resources_lead', $day1Url, $day2Url)
                     );
                 } catch (\Exception $e) {
                     Log::error("Email sending failed: " . $e->getMessage());
@@ -565,7 +470,7 @@ class FormsController extends Controller
 
                 try {
                     Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.resources_lead')
+                        new VideoResourceLead($lead, 'emails.resources_lead', $day1Url, $day2Url)
                     );
                 } catch (\Exception $e) {
                     Log::error("Email sending failed: " . $e->getMessage());

@@ -17,12 +17,27 @@ class VideoResourceLead extends Mailable
     protected $lead;
     protected $viewName;
     protected $day1Url;
+    protected $day2Url;
 
-    public function __construct($resource_lead, $viewName, $day1Url = null)
-    {
+    public function __construct(
+        $resource_lead,
+        $viewName,
+        $day1Url = null,
+        $day2Url = null
+    ) {
         $this->lead = $resource_lead;
         $this->viewName = $viewName;
         $this->day1Url = $day1Url;
+        $this->day2Url = $day2Url;
+    }
+
+
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: 'RTM Keynote Speech',
+            from: new Address('noreply@excitepanacea.site', config('app.name'))
+        );
     }
 
     public function content(): Content
@@ -32,6 +47,7 @@ class VideoResourceLead extends Mailable
             with: [
                 'lead' => $this->lead,
                 'day1Url' => $this->day1Url,
+                'day2Url' => $this->day2Url,
             ]
         );
     }
