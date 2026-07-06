@@ -417,6 +417,7 @@ class FormsController extends Controller
     
     public function resources_lead(Request $request)
     {
+        Log::info('Resource lead request data: ', $request->all());
         try {
             $request->validate([
                 'full_name' => 'bail|required|string',
