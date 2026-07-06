@@ -132,9 +132,9 @@
 
                                     <form action="{{ route('resources.lead') }}" method="POST" id="leadForm2" enctype="multipart/form-data">
                                         @csrf
-                                        <input type="hidden" name="resource_type" id="keynote2">
-                                        <input type="hidden" name="session_type" id="keynote">
-                                        <input type="hidden" name="lead_source" id="Day 2 Keynote">
+                                        <input type="hidden" name="resource_type" value="keynote2">
+                                        <input type="hidden" name="session_type" value="Keynote">
+                                        <input type="hidden" name="lead_source" value="Day 2 Keynote">
                                         <input type="hidden" name="video_url" id="video_url">
                                         <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
