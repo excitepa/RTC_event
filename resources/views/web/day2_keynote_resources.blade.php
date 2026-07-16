@@ -128,6 +128,7 @@
 
                                 <!-- Right Side: Form -->
                                 <div class="col-md-7 p-4">
+                                    
                                     <p class="text-muted mb-4">Fill in your details and we’ll send your <strong>exclusive RTM Conference 2026 resource</strong> straight to your inbox. We respect your privacy — no spam.</p>
 
                                     <form action="{{ route('resources.lead') }}" method="POST" id="leadForm2" enctype="multipart/form-data">
