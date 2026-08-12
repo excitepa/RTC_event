@@ -76,17 +76,31 @@
             <ul>
                 <li>Day 1 Keynote Speech by Farouk Gumel – Margins of Trust: The Informal Economy, Inclusion and the Future of West African Commerce</li>
                 <li>Day 2 Keynote Speech by Kayode Oladapo – The Sovereignty of Scale: How Mastering Integrated Supply Chains Creates Regional Dominance in FMCG</li>
-                {{-- <li>Day 2 Keynote Speech by Oghale Elueni – Building Resilience in West Africa’s Dynamic Markets</li> --}}
                 <li>Bonus insights and actionable strategies</li>
             </ul>
 
-            {{-- <p><strong>Please note:</strong> These download links are valid for <strong>60 minutes</strong> from the time you received this email.</p> --}}
+            <div class="cta">
+                <a href="{{ $day1Url }}" target="_blank">
+                    Download Day 1 Keynote PDF
+                </a>
+            </div>
 
             <div class="cta">
-                <a href="{{ $day1Url }}" target="_blank">Download Day 1 Keynote Speech</a>
+                <a href="{{ $day1VideoUrl }}" target="_blank">
+                    Watch Day 1 Keynote Video
+                </a>
             </div>
+
             <div class="cta">
-                <a href="{{ $day2Url }}" target="_blank">Download Day 2 Keynote Speech</a>
+                <a href="{{ $day2Url }}" target="_blank">
+                    Download Day 2 Keynote PDF
+                </a>
+            </div>
+
+            <div class="cta">
+                <a href="{{ $day2VideoUrl }}" target="_blank">
+                    Watch Day 2 Keynote Video
+                </a>
             </div>
 
             <p>If you experience any issues accessing the files, feel free to reach out to us at <a href="mailto:events@rtmwestafrica.com">events@rtmwestafrica.com</a>.</p>

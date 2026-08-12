@@ -18,17 +18,23 @@ class VideoResourceLead extends Mailable
     protected $viewName;
     protected $day1Url;
     protected $day2Url;
+    protected $day1VideoUrl;
+    protected $day2VideoUrl;
 
     public function __construct(
         $resource_lead,
         $viewName,
         $day1Url = null,
-        $day2Url = null
+        $day2Url = null,
+        $day1VideoUrl = null,
+        $day2VideoUrl = null
     ) {
         $this->lead = $resource_lead;
         $this->viewName = $viewName;
         $this->day1Url = $day1Url;
         $this->day2Url = $day2Url;
+        $this->day1VideoUrl = $day1VideoUrl;
+        $this->day2VideoUrl = $day2VideoUrl;
     }
 
 
@@ -48,6 +54,8 @@ class VideoResourceLead extends Mailable
                 'lead' => $this->lead,
                 'day1Url' => $this->day1Url,
                 'day2Url' => $this->day2Url,
+                'day1VideoUrl' => $this->day1VideoUrl,
+                'day2VideoUrl' => $this->day2VideoUrl,
             ]
         );
     }

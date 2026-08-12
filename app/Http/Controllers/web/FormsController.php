@@ -445,19 +445,37 @@ class FormsController extends Controller
                 'lead_source'  => $request->lead_source,
             ]);
 
-                $day1Url = URL::signedRoute('download.day1', [
+                // $day1Url = URL::signedRoute('download.day1', [
+                //     'email' => $request->email
+                // ]);
+
+                // $day2Url = URL::signedRoute('download.day2', [
+                //     'email' => $request->email
+                // ]);
+
+                $day1PdfUrl = URL::signedRoute('download.day1', [
                     'email' => $request->email
                 ]);
 
-                $day2Url = URL::signedRoute('download.day2', [
+                $day2PdfUrl = URL::signedRoute('download.day2', [
                     'email' => $request->email
                 ]);
+
+                $day1VideoUrl = 'https://youtu.be/tnXIJIdJ-Cw?si=_Ul5TAm8crL9itID';
+                $day2VideoUrl = 'https://youtu.be/tnXIJIdJ-Cw?si=_Ul5TAm8crL9itID';
             
             if ($request->resource_type === 'keynote1') {
 
                 try {
                     Mail::to($lead->email)->send(
-                        new VideoResourceLead($lead, 'emails.resources_lead', $day1Url, $day2Url)
+                        new VideoResourceLead(
+                            $lead,
+                            'emails.resources_lead',
+                            $day1PdfUrl,
+                            $day2PdfUrl,
+                            $day1VideoUrl,
+                            $day2VideoUrl
+                        )
                     );
                 } catch (\Exception $e) {
                     Log::error("Email sending failed: " . $e->getMessage());
