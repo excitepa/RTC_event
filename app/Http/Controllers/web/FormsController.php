@@ -452,6 +452,7 @@ class FormsController extends Controller
                 // $day2Url = URL::signedRoute('download.day2', [
                 //     'email' => $request->email
                 // ]);
+                
 
                 $day1PdfUrl = URL::signedRoute('download.day1', [
                     'email' => $request->email
